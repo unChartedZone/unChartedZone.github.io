@@ -1,6 +1,6 @@
 #header {
     background-color:#00ffff;
-    height:40px;
+    height:60px;
     border:solid black;
     position:fixed;
     left:0;
@@ -8,11 +8,13 @@
     top:-5px;
     border-radius: 5px;
     float:top;
+    z-index:1;
 }
 
 #header h1 {
+    color: #444;
     margin:0;
-    font-family: Helvetica;
+    font-family: times,Times New Roman;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,15 +29,28 @@ html,body {
 }
 
 .left {
-    background-color: #808080;
+    background-color: #ff9999;
     height: 1000px;
     width:50%;
     float: left;
     display:inline-block;
 }
 
+.left h3 {
+    font-family: Sans-Serif;
+    padding-top: 70px;
+    margin-left: 50%;
+    color: #FFFFFF;
+}
+
+.left ul {
+    font-family: Sans-Serif;
+    color:#FFFFFF;
+    margin-left: 50%;
+}
+
 .right {
-    background-color: #999999;
+    background-color: #ff9999;
     height: 1000px;
     width: 50%;
     float: right;
@@ -45,7 +60,20 @@ html,body {
 .right p {
     padding-top: 70px;
     margin-left: 70px;
-    color: yellow;
+    color: #FFFFFF;
+}
+
+#footer {
+    display:inline-block;
+    background-color:black;
+    width:100%;
+    height:60px;  
+    clear:both;
+}
+
+#footer h3 {
+    color: #FFFFFF;
+    text-align: center;
 }
 
     
