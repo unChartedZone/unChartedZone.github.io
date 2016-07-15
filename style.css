@@ -2,14 +2,14 @@
 
 #header {
     background-color:#00ffff;
-    height:60px;
-    border:solid black;
-    position:fixed;
+    height:100vh;
+    /*border:solid black;*/
+    /*position:fixed;*/
     left:0;
     right:0;
     top:-5px;
-    border-radius: 5px;
-    float:top;
+    /*border-radius: 5px;*/
+    /*float:top;*/
     z-index:1;
 }
 
@@ -30,40 +30,6 @@ html,body {
     padding:0;
 }
 
-.left {
-    background-color: #ff9999;
-    height: 1000px;
-    width:50%;
-    float: left;
-    display:inline-block;
-}
-
-.left h3 {
-    font-family: Sans-Serif;
-    padding-top: 70px;
-    margin-left: 50%;
-    color: #FFFFFF;
-}
-
-.left ul {
-    font-family: Sans-Serif;
-    color:#FFFFFF;
-    margin-left: 50%;
-}
-
-.right {
-    background-color: #ff9999;
-    height: 1000px;
-    width: 50%;
-    float: right;
-    display:inline-block;
-}
-
-.right p {
-    padding-top: 70px;
-    margin-left: 70px;
-    color: #FFFFFF;
-}
 
 #footer {
     display:inline-block;
