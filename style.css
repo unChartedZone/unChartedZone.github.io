@@ -3,11 +3,11 @@
 #header {
     /*background-color:#00ffff;*/
     background-image: url("images/mistyMountains.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     height:100vh;
     /*border:solid black;*/
-    /*position:fixed;*/
+    /*position: absolute;*/
     left:0;
     right:0;
     top:-5px;
@@ -28,8 +28,54 @@
     transform: translate(-50%, -50%)
 }
 
-#middle {
-    height: 700px;
+#linkedin {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30%;
+    left: 58%;
+    margin-right: -40%;
+    transform: translate(-50%, -50%);
+}
+
+#github {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#twitter {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    margin-right: -60%;
+    transform: translate(-50%, -50%);
+}
+
+#header p {
+    top: 60%;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#blackBar {
+    background-color: #1a1818;
+    height: 60px;
+    left: 0;
+    right: 0;
+}
+
+#about {
+    background-image: url("images/flippedMistyMountains.jpg");
+    height: 100vh;
     left: 0;
     right: 0;
 }
