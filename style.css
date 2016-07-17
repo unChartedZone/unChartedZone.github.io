@@ -2,7 +2,7 @@
 
 #header {
     /*background-color:#00ffff;*/
-    background-image: url("images/mistyMountains.jpg");
+    background-image: url("images/flippedMistyMountains.jpg");
     /*background-repeat: no-repeat;*/
     /*background-size: cover;*/
     height:100vh;
@@ -10,10 +10,10 @@
     /*position: absolute;*/
     left:0;
     right:0;
-    top:-5px;
+    /*top:-5px;*/
     /*border-radius: 5px;*/
     /*float:top;*/
-    z-index:1;
+    /*z-index:1;*/
 }
 
 #header h1 {
@@ -66,20 +66,16 @@
     transform: translate(-50%, -50%);
 }
 
-#blackBar {
-    background-color: #1a1818;
-    height: 60px;
-    left: 0;
-    right: 0;
-}
 
 #about {
-    background-image: url("images/flippedMistyMountains.jpg");
+    background-image: url("images/mistyMountains.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100vh;
     left: 0;
     right: 0;
+    margin-right: 0%;
 }
-
 html,body {
     background-color: #CAC6C5;
     margin:0;
