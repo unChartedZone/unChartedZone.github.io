@@ -70,6 +70,21 @@
 
 
 #about {
+    /*background-image: url("images/clouds.jpg");*/
+    /*background-repeat: repeat;*/
+    /*background-size: cover; */
+    height: 100vh;
+    /*width: 1440px;*/
+    /*height: 900px;*/
+    left: 0;
+    right: 0;
+    margin-right: 0%;
+    background-color: #ddded8;
+    /*background-color: black;*/
+
+}
+
+#work {
     background-image: url("images/mistyMountains.jpg");
     /*background-repeat: no-repeat;*/
     /*background-size: contain;*/
@@ -80,6 +95,7 @@
     right: 0;
     margin-right: 0%;
 }
+
 html,body {
     background-color: #CAC6C5;
     margin:0;
