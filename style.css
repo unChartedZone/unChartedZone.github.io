@@ -94,8 +94,15 @@
 
 }
 
-/* Don't change */
 #work {
+    background-image: url("images/flippedClouds.jpeg");
+    width: 1440px;
+    height: 900px;
+}
+
+
+/* Don't change */
+#contact {
     background-image: url("images/mistyMountains.jpg");
     /*background-repeat: no-repeat;*/
     /*background-size: contain;*/
@@ -122,6 +129,6 @@ html,body {
 }
 
 #footer h3 {
-    color: #FFFFFF;
+    color: #58FFDF;
     text-align: center;
 }
