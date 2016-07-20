@@ -37,13 +37,13 @@
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
-#linkedin {
+#twitter {
     width: 60px;
     height: 60px;
     position: absolute;
     top: 30%;
-    left: 58%;
-    margin-right: -40%;
+    left: 43%;
+    margin-right: -60%;
     transform: translate(-50%, -50%);
 }
 
@@ -57,13 +57,13 @@
     transform: translate(-50%, -50%);
 }
 
-#twitter {
+#linkedin {
     width: 60px;
     height: 60px;
     position: absolute;
     top: 30%;
-    left: 43%;
-    margin-right: -60%;
+    left: 58%;
+    margin-right: -42%;
     transform: translate(-50%, -50%);
 }
 
