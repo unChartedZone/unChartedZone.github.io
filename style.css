@@ -111,11 +111,25 @@
     /*background-repeat: no-repeat;*/
     /*background-size: contain;*/
     /*height: 100vh;*/
+    position: absolute;
     width: 1440px;
     height: 900px;
     left: 0;
     right: 0;
     margin-right: 0%;
+}
+
+#contactInfo {
+    color: black;
+    font-family: Lobster;
+    font-size: 30px;
+    top: 60%;
+    position: absolute;
+    left: 20%;
+    margin-right: -80%;
+    transform: translate(-50%, -50%);
+    word-spacing: 20px;
+    -webkit-text-stroke: 0.5px #58FFDF;    
 }
 
 html,body {
