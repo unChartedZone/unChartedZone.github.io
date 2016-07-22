@@ -43,8 +43,8 @@
     font-size: 30px;
     top: 60%;
     position: absolute;
-    left: 53%;
-    margin-right: -47%;
+    left: 50%;
+    margin-right: -50%;
     transform: translate(-50%, -50%);
     word-spacing: 20px;
     -webkit-text-stroke: 0.5px #58FFDF;
