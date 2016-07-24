@@ -1,5 +1,5 @@
-// $(document).ready(function() {
-//     $('footer').click(function() {
-//         $('footer').fadeOut('slow');
-//     });
-// });
+$(document).ready(function() {
+    $('#header h1').click(function() {
+        $('#header h1').fadeOut('slow');
+    });
+});
