@@ -1,22 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 #header {
-    /*background-color:#00ffff;*/
     background-image: url("images/flippedMistyMountains.jpg");
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*height:100vh;*/
     height: 900px;
-    /*width: 1440px;*/
     width: 100%;
-    /*border:solid black;*/
-    /*position: absolute;*/
     left:0;
     right:0;
-    /*top:-5px;*/
-    /*border-radius: 5px;*/
-    /*float:top;*/
-    /*z-index:1;*/
 }
 
 #header h1 {
