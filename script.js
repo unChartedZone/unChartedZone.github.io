@@ -8,11 +8,3 @@ $(document).ready(function() {
         }
     });
 });
-
-function getContactInfo() {
-    var header = document.getElementById("contactInfo");
-    var info = header.textContent;
-    console.log(info);
-}
-
-getContactInfo();
