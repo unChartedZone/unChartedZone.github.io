@@ -91,6 +91,10 @@
     height: 900px;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 #work {
     background-image: url("images/flippedClouds.jpeg");
     width: 100%;
