@@ -36,7 +36,23 @@
 
 #header p A {
     text-decoration: none;
-    color: inherit;
+    color: black;
+    -webkit-text-stroke: 0.5px #58FFDF;
+}
+
+#header p A:visited {
+    color:black;
+    -webkit-text-stroke: 0.5px #58FFDF;
+}
+
+#header p A:hover {
+    color: black;
+    -webkit-text-stroke: 0.5px #58FFDF;
+}
+
+#header p A:active {
+    color: black;
+    -webkit-text-stroke: 0.5px #58FFDF;
 }
 
 #twitter {
