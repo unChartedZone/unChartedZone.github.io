@@ -1,6 +1,7 @@
 var counter = 0;
 
 $(document).ready(function() {
+    $("#header h1").fadeIn(2000);
     $("#header h1").click(function() {
         counter++;
         if(counter == 5) {
@@ -8,3 +9,6 @@ $(document).ready(function() {
         }
     });
 });
+
+console.log("boots".length);
+var temp = "christian valdez";
