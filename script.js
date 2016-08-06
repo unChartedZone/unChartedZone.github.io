@@ -9,6 +9,3 @@ $(document).ready(function() {
         }
     });
 });
-
-console.log("boots".length);
-var temp = "christian valdez";
