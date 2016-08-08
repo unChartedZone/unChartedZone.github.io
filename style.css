@@ -36,6 +36,8 @@
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
+/*These handle the sytling of the 
+ * link jumpers in the header div*/
 #header p A {
     text-decoration: none;
     color: black;
