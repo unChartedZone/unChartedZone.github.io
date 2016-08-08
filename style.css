@@ -104,10 +104,6 @@
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
-ul {
-    list-style-type: none;
-}
-
 #work {
     background-image: url("images/flippedClouds.jpeg");
     width: 100%;
@@ -134,14 +130,6 @@ ul {
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
-html,body {
-    background-color: black;
-    margin:0;
-    padding:0;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 #footer {
     display:inline-block;
     background-color:black;
@@ -153,4 +141,16 @@ html,body {
 #footer h3 {
     color: #58FFDF;
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
