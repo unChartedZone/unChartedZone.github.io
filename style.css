@@ -95,14 +95,21 @@
     height: 900px;
 }
 
-#about p {
+#aboutContent {
     position: relative;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     text-align:center;
     padding: 0;
     margin: 0;
-    top: -20%;
+    -webkit-text-stroke: 0.5px #58FFDF;
+}
+
+#progLangHeader {
+    position: relative;
+    font-family:'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: center;
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
@@ -147,6 +154,7 @@
 
 ul {
     list-style-type: none;
+    text-align: center;
 }
 
 html, body {
