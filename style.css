@@ -13,13 +13,13 @@
     color: black;
     margin:0;
     font-family: Lobster,times,Times New Roman;
-    font-size: 100px;
+    font-size: 6.250em;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    -webkit-text-stroke: 0.5px #58FFDF;
+    -webkit-text-stroke: 0.031em #58FFDF;
 }
 
 #header p {
