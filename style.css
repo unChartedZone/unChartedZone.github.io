@@ -104,8 +104,8 @@
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
-table, th, td {
-    border: 1px solid black;
+ul {
+    list-style-type: none;
 }
 
 #work {
