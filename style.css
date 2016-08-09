@@ -106,11 +106,7 @@
 }
 
 #progLangHeader {
-    position: relative;
-    font-family:'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    -webkit-text-stroke: 0.5px #58FFDF;
+    word-spacing: 5px;
 }
 
 #work {
