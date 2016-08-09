@@ -134,6 +134,10 @@
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 html, body {
     background-color: black;
     margin: 0;
