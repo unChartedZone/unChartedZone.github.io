@@ -95,6 +95,8 @@
     height: 900px;
     color: black;
     font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px #58FFDF;
 }
 
 #about p {
@@ -104,17 +106,16 @@
 
 #description {
     position: relative;
-    left: 20%;
+    left: 15%;
 }
 
 .aboutContent {
     float: left;
     text-align: center;
-    font-size: 20px;
 }
 
 #about div {
-    padding-left: 40%;    
+    padding-left: 30%;    
 }
 
 #about div ul li {
