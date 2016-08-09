@@ -95,7 +95,7 @@
     height: 900px;
 }
 
-#aboutContent {
+.aboutContent {
     position: relative;
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
