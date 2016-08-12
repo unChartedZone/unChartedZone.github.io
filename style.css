@@ -100,8 +100,8 @@
 }
 
 #about p {
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #description {
@@ -129,6 +129,14 @@
     clear: both;
 }
 
+#work p {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 25px;
+    font-family: Oswald;
+	-webkit-text-stroke: 0.5px #58FFDF;
+}
 
 /* Don't change */
 #contact {
@@ -160,10 +168,6 @@
 #footer h3 {
     color: #58FFDF;
     text-align: center;
-}
-
-ul {
-    list-style-type: none;
 }
 
 html, body {
