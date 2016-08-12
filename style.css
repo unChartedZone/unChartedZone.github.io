@@ -118,8 +118,15 @@
     padding-left: 30%;    
 }
 
+#about div ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
 #about div ul li {
-    margin: 13.5px 0;
+    list-style: none;
+    padding: 10px 5px 10px 5px;
 }
 
 #work {
