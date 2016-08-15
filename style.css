@@ -36,7 +36,7 @@
     -webkit-text-stroke: 0.5px #58FFDF;
 }
 
-/*These handle the sytling of the 
+/*These handle the sytling of the
  * link jumpers in the header div*/
 #header p A {
     text-decoration: none;
@@ -115,7 +115,7 @@
 }
 
 #about div {
-    padding-left: 30%;    
+    padding-left: 30%;
 }
 
 #about div ul {
@@ -136,10 +136,26 @@
     clear: both;
 }
 
-#work p {
+#work p:first-of-type {
     text-align: center;
+    font-family: Oswald;
+    font-size: 40px;
+    -webkit-text-stroke: 0.5px #58FFDF;
     padding-top: 0;
     margin-top: 0;
+}
+
+#sicxeTitle {
+    text-align: center;
+    font-family: Oswald;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px #58FFDF;
+    padding-top: 100px;
+    margin-top: 0;
+}
+
+#sicxeDescription {
+    text-align: center;
     font-size: 25px;
     font-family: Oswald;
 	-webkit-text-stroke: 0.5px #58FFDF;
