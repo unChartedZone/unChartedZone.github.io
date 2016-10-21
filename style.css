@@ -6,7 +6,7 @@
 }
 
 #header {
-    color: white;
+    color: #F51FA1;
     font-family: 'Oswald';
     margin: 0 auto;
     padding: 0;
@@ -14,9 +14,9 @@
     /*width: 100%;*/
     /*height: 900px;*/
     height: 100vh; /* Makes div initial height when loaded */
-    /*background-image: url("images/darkNebula.jpg");*/
-    /*background-size: cover;*/
-    background-color: black;
+    background-image: url("./images/cloudyMountains.jpeg");
+    background-size: cover;
+    /*background-color: black;*/
 }
 
 nav {
