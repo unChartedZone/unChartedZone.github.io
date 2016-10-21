@@ -5,8 +5,7 @@
     clear: both;
 }
 
-#header {
-    color: #F51FA1;
+.jumbotron {
     font-family: 'Oswald';
     margin: 0 auto;
     padding: 0;
@@ -17,6 +16,17 @@
     background-image: url("./images/cloudyMountains.jpeg");
     background-size: cover;
     /*background-color: black;*/
+}
+
+.jumbotron>.container-fluid {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /*border: 1px solid red;*/
+}
+
+#navbarheader {
+    background-color: rgba(0,0,0,.25);
 }
 
 nav {
