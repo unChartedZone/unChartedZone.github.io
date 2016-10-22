@@ -20,7 +20,9 @@ window.onscroll = function(e){
 
     if(blue_area.offsetTop <= startPos && startPos <= endPos){
         console.log("Should turn a darker color");
+        header_links.style.backgroundColor = "rgba(0,0,0,1)";
     }else{
         console.log("Should be a lighter color");
+        header_links.style.backgroundColor = "rgba(0,0,0,.40)";
     }
 };

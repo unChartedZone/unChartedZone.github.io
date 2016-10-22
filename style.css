@@ -28,7 +28,7 @@
 }
 
 #navbarheader {
-    background-color: rgba(0,0,0,.25);
+    background-color: rgba(0,0,0,.40);
 }
 
 nav {
@@ -36,7 +36,7 @@ nav {
 }
 
 button {
-    color: white !important;
+    color: #FFFFFF !important;
 }
 
 #header-title {
