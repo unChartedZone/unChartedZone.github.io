@@ -11,7 +11,7 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    /*width: 100%;*/
+    width: 100%;
     /*height: 900px;*/
     height: 100vh; /* Makes div initial height when loaded */
     width: 100%;
