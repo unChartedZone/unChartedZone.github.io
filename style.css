@@ -47,11 +47,11 @@ button {
 }
 
 @media (max-width: @screen-xs){
-    #header-title{font-size: 10px;}
+    body{font-size: 10px;}
 }
 
 @media (max-width: @screen-sm) {
-    #header-title{font-size: 14px;}
+    body{font-size: 14px;}
 }
 
 body {
