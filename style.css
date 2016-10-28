@@ -39,11 +39,11 @@ button {
     color: #FFFFFF !important;
 }
 
-@media (max-width: @screen-xs){
+@media (max-width: auto;){
     body{font-size: 10px;}
 }
 
-@media (max-width: @screen-sm) {
+@media (max-width: 540px) {
     body{font-size: 14px;}
 }
 
