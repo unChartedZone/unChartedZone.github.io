@@ -46,7 +46,13 @@ button {
     font-size: 6.25em;
 }
 
+@media (max-width: @screen-xs){
+    #header-title{font-size: 10px;}
+}
 
+@media (max-width: @screen-sm) {
+    #header-title{font-size: 14px;}
+}
 
 body {
     background-color: white;
