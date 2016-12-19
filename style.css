@@ -24,7 +24,13 @@
     transform: translateY(-50%);
 }
 
-#navbarheader {
+#header-title {
+    display: inline-block;
+    position: relative;
+    font-size: 6.25em;
+}
+
+#navbarContainer {
     background-color: rgba(0,0,0,.70);
 }
 
@@ -32,14 +38,13 @@ nav {
     text-align: left !important;
 }
 
-button {
-    color: #FFFFFF !important;
+.fa {
+	font-size: 25px !important;
+	padding-right: 20px;
 }
 
-#header-title {
-    display: inline-block;
-    position: relative;
-    font-size: 6.25em;
+button {
+    color: #FFFFFF !important;
 }
 
 body {
