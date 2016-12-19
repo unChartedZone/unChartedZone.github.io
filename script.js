@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
 });
 
-var header_links = document.getElementById("navbarheader"),
+var header_links = document.getElementById("navbarContainer"),
     blue_area = document.getElementById("about");
 
 // Detect on scroll
