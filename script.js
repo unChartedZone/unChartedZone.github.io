@@ -23,6 +23,6 @@ window.onscroll = function(e){
         header_links.style.backgroundColor = "rgba(0,0,0,1)";
     }else{
         console.log("Should be a lighter color");
-        header_links.style.backgroundColor = "rgba(0,0,0,.40)";
+        header_links.style.backgroundColor = "rgba(0,0,0,.70)";
     }
 };
