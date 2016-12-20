@@ -13,9 +13,17 @@ nav {
     text-align: left !important;
 }
 
+.nav-item {
+	padding-left: 10px;
+}
+
+.nav-item a:hover {
+	color: white !important;
+}
+
 .fa {
 	font-size: 25px !important;
-	padding-right: 20px;
+	/* padding-right: 20px; */
 }
 
 .jumbotron {
