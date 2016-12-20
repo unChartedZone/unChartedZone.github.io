@@ -5,6 +5,19 @@
     clear: both;
 }
 
+#navbarContainer {
+    background-color: rgba(0,0,0,.70);
+}
+
+nav {
+    text-align: left !important;
+}
+
+.fa {
+	font-size: 25px !important;
+	padding-right: 20px;
+}
+
 .jumbotron {
     font-family: 'Oswald';
 	color: black;
@@ -30,23 +43,12 @@
     font-size: 6.25em;
 }
 
-#navbarContainer {
-    background-color: rgba(0,0,0,.70);
-}
-
-nav {
-    text-align: left !important;
-}
-
-.fa {
-	font-size: 25px !important;
-	padding-right: 20px;
-}
-
+/* This set the style for the three bar button used for when the navabar collapses */
 button {
     color: #FFFFFF !important;
 }
 
+/* Some basic settings for the whole body */
 body {
     background-color: white;
     margin: 0;
