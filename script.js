@@ -1,11 +1,11 @@
 var counter = 0;
 
 $(document).ready(function() {
-    $("#header h1").fadeIn(2000);
-    $("#header h1").click(function() {
+    $("#header-title ").fadeIn(2000);
+    $("#header-title").click(function() {
         counter++;
         if(counter == 5) {
-            $("#header h1").fadeOut("slow");
+            $("#header-title").fadeOut("slow");
         }
     });
 });
@@ -21,7 +21,8 @@ window.onscroll = function(e){
     if(blue_area.offsetTop <= startPos && startPos <= endPos){
         console.log("Should turn a darker color");
         header_links.style.backgroundColor = "rgba(0,0,0,1)";
-    }else{
+    }
+	else{
         console.log("Should be a lighter color");
         header_links.style.backgroundColor = "rgba(0,0,0,.70)";
     }
