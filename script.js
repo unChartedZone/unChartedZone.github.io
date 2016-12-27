@@ -13,12 +13,26 @@ $(document).ready(function() {
 var header_links = document.getElementById("navbarContainer"),
     blue_area = document.getElementById("about");
 
+var mainbottom = $('.jumbotron').offset().top + $('.jumbotron').height();
+
 // Detect on scroll
 window.onscroll = function(e){
+// window.onscroll = function(){
+	// we round here to reduce a little workload
+	// var stop = Math.round($(window).scrollTop());
+	//
+	// if (stop > mainbottom) {
+	// 	console.log("I went passed the header!");
+	// 	$('#navbarContainer').addClass('past-main');
+	// } else {
+	// 	$('#navbarContainer').removeClass('past-main');
+	// }
+
+	// console.log(header_links.offsetHeight);
     var startPos = ((e.pageY||document.body.scrollTop) + header_links.offsetHeight);
     var endPos = blue_area.offsetTop + blue_area.offsetHeight;
-
-    if(blue_area.offsetTop <= startPos && startPos <= endPos){
+	//
+    if(blue_area.offsetTop <= startPos){
         console.log("Should turn a darker color");
         header_links.style.backgroundColor = "rgba(0,0,0,1)";
     }
