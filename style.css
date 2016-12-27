@@ -52,11 +52,6 @@ nav {
     font-size: 6.25em;
 }
 
-/* This set the style for the three bar button used for when the navabar collapses */
-button {
-    color: #FFFFFF !important;
-}
-
 #about {
 	padding-top: 40px;
 	margin: 0 auto; /* Should make this div in the center */
@@ -66,6 +61,11 @@ button {
 
 .aboutContent ul {
 	list-style-type: none;
+}
+
+/* This set the style for the three bar button used for when the navabar collapses */
+button {
+    color: #FFFFFF !important;
 }
 
 /* Some basic settings for the whole body */
