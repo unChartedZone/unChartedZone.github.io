@@ -10,8 +10,8 @@ $(document).ready(function() {
     });
 });
 
-var header_links = document.getElementById("navbarContainer"),
-    blue_area = document.getElementById("about");
+var navbar = document.getElementById("navbarContainer"),
+    about_area = document.getElementById("about");
 
 var mainbottom = $('.jumbotron').offset().top + $('.jumbotron').height();
 
@@ -28,17 +28,17 @@ window.onscroll = function(e){
 	// 	$('#navbarContainer').removeClass('past-main');
 	// }
 
-	// console.log(header_links.offsetHeight);
-    var startPos = ((e.pageY||document.body.scrollTop) + header_links.offsetHeight);
-    var endPos = blue_area.offsetTop + blue_area.offsetHeight;
+	// console.log(navbar.offsetHeight);
+    var startPos = ((e.pageY||document.body.scrollTop) + navbar.offsetHeight);
+    var endPos = about_area.offsetTop + about_area.offsetHeight;
 	//
-    if(blue_area.offsetTop <= startPos){
+    if(about_area.offsetTop <= startPos){
         console.log("Should turn a darker color");
-        header_links.style.backgroundColor = "rgba(0,0,0,1)";
+        navbar.style.backgroundColor = "rgba(0,0,0,1)";
     }
 	else{
         console.log("Should be a lighter color");
-        header_links.style.backgroundColor = "rgba(0,0,0,.70)";
+        navbar.style.backgroundColor = "rgba(0,0,0,.70)";
     }
 };
 
