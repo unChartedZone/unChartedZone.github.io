@@ -33,11 +33,9 @@ window.onscroll = function(e){
     var endPos = about_area.offsetTop + about_area.offsetHeight;
 	//
     if(about_area.offsetTop <= startPos){
-        console.log("Should turn a darker color");
         navbar.style.backgroundColor = "rgba(0,0,0,1)";
     }
 	else{
-        console.log("Should be a lighter color");
         navbar.style.backgroundColor = "rgba(0,0,0,.70)";
     }
 };
