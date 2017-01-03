@@ -53,13 +53,14 @@ nav {
 }
 
 #about {
-	padding-top: 40px;
+	padding-top: 400px;
 	margin: 0 auto; /* Should make this div in the center */
+	margin-top: 20px;
 	width: 700px;
 	text-align: center;
 }
 
-.aboutContent ul {
+#programmingLanguages ul {
 	list-style-type: none;
 }
 
