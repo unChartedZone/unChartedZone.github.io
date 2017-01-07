@@ -53,11 +53,22 @@ nav {
 }
 
 #about {
-	padding-top: 400px;
 	margin: 0 auto; /* Should make this div in the center */
-	margin-top: 20px;
+	padding-top: 200px;
+	padding-bottom: 400px;
 	width: 700px;
 	text-align: center;
+}
+
+#myself {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+#motto {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #programmingLanguages ul {
