@@ -15,20 +15,8 @@ var navbar = document.getElementById("navbarContainer"),
 
 var mainbottom = $('.jumbotron').offset().top + $('.jumbotron').height();
 
-// Detect on scroll
+// Detect on scroll when the navbar is passed the header container div
 window.onscroll = function(e){
-// window.onscroll = function(){
-	// we round here to reduce a little workload
-	// var stop = Math.round($(window).scrollTop());
-	//
-	// if (stop > mainbottom) {
-	// 	console.log("I went passed the header!");
-	// 	$('#navbarContainer').addClass('past-main');
-	// } else {
-	// 	$('#navbarContainer').removeClass('past-main');
-	// }
-
-	// console.log(navbar.offsetHeight);
     var startPos = ((e.pageY||document.body.scrollTop) + navbar.offsetHeight);
     var endPos = about_area.offsetTop + about_area.offsetHeight;
 	//
