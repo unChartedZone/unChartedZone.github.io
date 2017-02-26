@@ -13,6 +13,10 @@ nav {
     text-align: left !important;
 }
 
+.navbar-brand {
+	padding-top: 8px;
+}
+
 .nav-item {
     font-size: 20px;
 	padding-left: 10px;
@@ -63,7 +67,7 @@ nav {
 #myself {
 	width: 200px;
 	height: 200px;
-	/* border-radius: 50%; */
+	border-radius: 50%;
 }
 
 #motto {
@@ -71,7 +75,11 @@ nav {
 	padding-bottom: 40px;
 }
 
-#programmingLanguages ul {
+#skills p {
+	font-size: small;
+}
+
+#skills ul {
 	list-style-type: none;
 }
 
@@ -87,10 +95,10 @@ body {
     padding: 0;
 }
 
-@media (max-width: auto){
-    #header-title {font-size: 5px;}
-}
+/* @media (max-width: auto){ */
+/*     #header-title {font-size: 5px;} */
+/* } */
 
-@media (max-width: 540px) {
-    #header-title {font-size: 5px;}
-}
+/* @media (max-width: 540px) { */
+/*     #header-title {font-size: 5px;} */
+/* } */
