@@ -47,16 +47,22 @@ nav {
 }
 
 .jumbotron {
-    font-family: 'Oswald';
-	color: black;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    height: 100vh; /* Makes div initial height when loaded */
-    background-image: url("./images/topDownBeach.jpg");
-    background-size: auto;
-    background-size: 100% 100vh;
+	font-family: 'Oswald';
+	color: yellow;
+	/* color: #FE2E87; */
+	/* color: #72EACF; */
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	/* Makes div initial height when loaded */
+	/* background-image: url("./images/MkSwGdb.jpg"); */
+	/* background-image: url("./images/topDownBeach.jpg"); */
+	/* background-image: url("./images/cloudyMountains.jpeg"); */
+	background-image: url("./images/foggyGoldenGate.jpg");
+	background-size: auto;
+	background-size: 100% 100vh;
 }
 
 .jumbotron>.container-fluid {
