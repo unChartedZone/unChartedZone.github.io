@@ -71,13 +71,10 @@ nav {
 	transform: translateY(-50%);
 }
 
-#header {
-}
-
 #header-title {
-	display: inline-block;
-	position: relative;
-	font-size: 6.25em;
+	/* display: inline-block; */
+	/* position: relative; */
+	/* font-size: 6.25em; */
 }
 
 #about {
@@ -85,7 +82,7 @@ nav {
 	/* Should make this div in the center */
 	padding-top: 200px;
 	padding-bottom: 400px;
-	width: 700px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -108,20 +105,10 @@ nav {
 	list-style-type: none;
 }
 
-
 /* @media (max-width: auto){ */
-
-
-/*     #header-title {font-size: 5px;} */
-
-
+/* 	#header-title {font-size: 2em;} */
 /* } */
 
-
 /* @media (max-width: 540px) { */
-
-
-/*     #header-title {font-size: 5px;} */
-
-
+/* 	#header-title {font-size: 2em;} */
 /* } */
