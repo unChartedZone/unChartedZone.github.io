@@ -2,27 +2,30 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 /* This set the style for the three bar button used for when the navabar collapses */
+
 button {
-    color: #FFFFFF !important;
+	color: #FFFFFF !important;
 }
 
+
 /* Some basic settings for the whole body */
+
 body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
+	background-color: white;
+	margin: 0;
+	padding: 0;
 }
 
 .clear {
-    clear: both;
+	clear: both;
 }
 
 #navbarContainer {
-    background-color: rgba(0,0,0,.70);
+	background-color: rgba(0, 0, 0, .70);
 }
 
 nav {
-    text-align: left !important;
+	text-align: left !important;
 }
 
 .navbar-brand {
@@ -30,7 +33,7 @@ nav {
 }
 
 .nav-item {
-    font-size: 20px;
+	font-size: 20px;
 	padding-left: 10px;
 }
 
@@ -57,19 +60,23 @@ nav {
 }
 
 .jumbotron>.container-fluid {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#header {
 }
 
 #header-title {
-    display: inline-block;
-    position: relative;
-    font-size: 6.25em;
+	display: inline-block;
+	position: relative;
+	font-size: 6.25em;
 }
 
 #about {
-	margin: 0 auto; /* Should make this div in the center */
+	margin: 0 auto;
+	/* Should make this div in the center */
 	padding-top: 200px;
 	padding-bottom: 400px;
 	width: 700px;
@@ -94,10 +101,21 @@ nav {
 #skills ul {
 	list-style-type: none;
 }
+
+
 /* @media (max-width: auto){ */
+
+
 /*     #header-title {font-size: 5px;} */
+
+
 /* } */
 
+
 /* @media (max-width: 540px) { */
+
+
 /*     #header-title {font-size: 5px;} */
+
+
 /* } */
