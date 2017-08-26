@@ -2,20 +2,38 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
-/* This set the style for the three bar button used for when the navabar collapses */
+/*##############################################################
 
+				ELEMENTS ELEMENTS ELEMENTS
+
+##############################################################*/
+
+/* This set the style for the three bar button used for when the navabar collapses */
 button {
 	color: #FFFFFF !important;
 }
 
-
 /* Some basic settings for the whole body */
-
 body {
 	background-color: white;
 	margin: 0;
 	padding: 0;
 }
+
+nav {
+	text-align: left !important;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+/*##############################################################
+
+				CLASSES CLASSES CLASSES
+
+##############################################################*/
 
 .clear {
 	clear: both;
@@ -23,10 +41,6 @@ body {
 
 #navbarContainer {
 	background-color: rgba(0, 0, 0, .70);
-}
-
-nav {
-	text-align: left !important;
 }
 
 .navbar-brand {
@@ -71,6 +85,12 @@ nav {
 	top: 50%;
 	transform: translateY(-50%);
 }
+
+/*##############################################################
+
+				IDS IDS IDS
+
+##############################################################*/
 
 #header-title {
 	/* display: inline-block; */
