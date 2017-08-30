@@ -95,7 +95,25 @@ p {
 #header-title {
 	/* display: inline-block; */
 	/* position: relative; */
-	/* font-size: 6.25em; */
+	 font-size: 6.25em;
+	/*font-size: 14px;*/
+	/* width: inherit; */
+}
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+	#header-title {
+		font-size: 1.5em; /* 1.5x default size */
+	}
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+	#header-title {
+		font-size: 1.2em; /* 1.2x default size */
+	}
+}
+@media all and (max-width: 500px) { /* screen size until 500px */
+	#header-title {
+		font-size: 0.8em; /* 0.8x default size */
+	}
 }
 
 #about {
@@ -111,6 +129,18 @@ p {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+	visibility: hidden;
+}
+
+.fadeIn {
+	-webkit-animation: animat_show 0.8s;
+	animation: animat_show 0.8s;
+	visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+	0%{opacity: 0}
+	100%{opacity: 1}
 }
 
 #motto {
