@@ -32,7 +32,8 @@ nav {
 }
 
 .jumbotron {
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
+    font-family: 'Letter Gothic Std';
 	color: black;
     margin: 0 auto;
     padding: 0;
