@@ -35,10 +35,10 @@ window.onscroll = function(e){
     var endPos = about_area.offsetTop + about_area.offsetHeight;
 	//
     if(about_area.offsetTop <= startPos){
-        navbar.style.backgroundColor = "rgba(0,0,0,1)";
+		navbar.setAttribute("style","background-color: rgba(0,0,0,1) !important");
     }
 	else{
-        navbar.style.backgroundColor = "rgba(0,0,0,.70)";
+		navbar.setAttribute("style","background-color: rgba(0,0,0,.70) !important");
     }
 };
 
