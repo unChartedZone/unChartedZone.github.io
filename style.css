@@ -2,6 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
+@font-face {
+	font-family: Google Sans;
+	src: url(fonts/GoogleSans-Regular.ttf);
+}
+
 /*##############################################################
 
 				ELEMENTS ELEMENTS ELEMENTS
@@ -58,23 +63,16 @@ p {
 
 .fa {
 	font-size: 25px !important;
-	/* padding-right: 20px; */
 }
 
 .jumbotron {
 	font-family: 'Google Sans';
 	color: white;
-	/* color: #FE2E87; */
-	/* color: #72EACF; */
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	width: 100%;
 	height: 100vh;
-	/* Makes div initial height when loaded */
-	/* background-image: url("./images/MkSwGdb.jpg"); */
-	/* background-image: url("./images/topDownBeach.jpg"); */
-	/* background-image: url("./images/cloudyMountains.jpeg"); */
 	background-image: url("./images/foggyGoldenGate.jpg");
 	background-size: auto;
 	background-size: 100% 100vh;
@@ -86,6 +84,10 @@ p {
 	transform: translateY(-50%);
 }
 
+.skill-section {
+	padding-top: 50px;
+}
+
 /*##############################################################
 
 				IDS IDS IDS
@@ -93,11 +95,7 @@ p {
 ##############################################################*/
 
 #header-title {
-	/* display: inline-block; */
-	/* position: relative; */
 	 font-size: 6.25em;
-	/*font-size: 14px;*/
-	/* width: inherit; */
 }
 
 @media all and (max-width: 1200px) { /* screen size until 1200px */
@@ -125,6 +123,10 @@ p {
 	text-align: center;
 }
 
+#operating-systems {
+	padding-bottom: 50px;
+}
+
 #myself {
 	width: 200px;
 	height: 200px;
@@ -148,18 +150,3 @@ p {
 	padding-bottom: 40px;
 }
 
-#skills p {
-	font-size: small;
-}
-
-#skills ul {
-	list-style-type: none;
-}
-
-/* @media (max-width: auto){ */
-/* 	#header-title {font-size: 2em;} */
-/* } */
-
-/* @media (max-width: 540px) { */
-/* 	#header-title {font-size: 2em;} */
-/* } */
