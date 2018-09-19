@@ -12,16 +12,16 @@ function showImages(el) {
 	});
 }
 
-$(document).ready(function() {
-    $("#header-title ").fadeIn(2000);
-    $("#header-title").click(function() {
-        counter++;
-        if(counter == 5) {
-            $("#header-title").fadeOut("slow");
-        }
-    });
-	showImages('.star');
-});
+// $(document).ready(function() {
+//     $("#header-title ").fadeIn(2000);
+//     $("#header-title").click(function() {
+//         counter++;
+//         if(counter == 5) {
+//             $("#header-title").fadeOut("slow");
+//         }
+//     });
+// 	showImages('.star');
+// });
 
 var navbar = document.getElementById("navbarContainer"),
     about_area = document.getElementById("about");
@@ -42,5 +42,30 @@ window.onscroll = function(e){
     }
 };
 
+function subHeadTypeWriter() {
+	var subHeader = document.createElement('span');
+	var subHeaderContainer = document.getElementsByClassName('typewriter')[0];
+
+	subHeader.classList.add('sub-header');
+	subHeader.innerHTML = "C";
+	var fullString = 'ALIFORNIA BASED DEVELOPER'
+
+	subHeaderContainer.insertBefore(subHeader,subHeaderContainer.childNodes[0]);
+
+	var counter = 0;
+
+	function timeout() {
+		if(counter == fullString.length) {
+			return;
+		}
+		subHeader.innerHTML = subHeader.innerHTML + fullString.charAt(counter);
+		counter++;
+		setTimeout(timeout,150);
+	}
+
+	timeout('L');
+}
+
+subHeadTypeWriter();
 
 

@@ -29,11 +29,6 @@ nav {
 	text-align: left !important;
 }
 
-p {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-}
-
 /*##############################################################
 
 				CLASSES CLASSES CLASSES
@@ -42,10 +37,6 @@ p {
 
 .clear {
 	clear: both;
-}
-
-#navbarContainer {
-	background-color: rgba(0, 0, 0, .70) !important;
 }
 
 .navbar-brand {
@@ -88,6 +79,16 @@ p {
 	padding-top: 50px;
 }
 
+.sub-header {
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	border-right: .15em solid orange; /* The typwriter cursor */
+	animation: 
+		blink-caret .75s step-end infinite;
+}
+
 /*##############################################################
 
 				IDS IDS IDS
@@ -95,23 +96,7 @@ p {
 ##############################################################*/
 
 #header-title {
-	 font-size: 6.25em;
-}
-
-@media all and (max-width: 1200px) { /* screen size until 1200px */
-	#header-title {
-		font-size: 1.5em; /* 1.5x default size */
-	}
-}
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-	#header-title {
-		font-size: 1.2em; /* 1.2x default size */
-	}
-}
-@media all and (max-width: 500px) { /* screen size until 500px */
-	#header-title {
-		font-size: 0.8em; /* 0.8x default size */
-	}
+	font-size: 6.25em;
 }
 
 #about {
@@ -150,3 +135,12 @@ p {
 	padding-bottom: 40px;
 }
 
+#navbarContainer {
+	background-color: rgba(0, 0, 0, .70) !important;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
