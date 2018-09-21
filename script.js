@@ -1,5 +1,3 @@
-var counter = 0;
-
 function showImages(el) {
 	var windowHeight = jQuery(window).height();
 	$(el).each(function() {
@@ -12,35 +10,31 @@ function showImages(el) {
 	});
 }
 
-// $(document).ready(function() {
-//     $("#header-title ").fadeIn(2000);
-//     $("#header-title").click(function() {
-//         counter++;
-//         if(counter == 5) {
-//             $("#header-title").fadeOut("slow");
-//         }
-//     });
-// 	showImages('.star');
-// });
+$(document).ready(function() {
+	var counter = 0;
 
-var navbar = document.getElementById("navbarContainer"),
-    about_area = document.getElementById("about");
-
-var mainbottom = $('.jumbotron').offset().top + $('.jumbotron').height();
-
-// Detect on scroll when the navbar is passed the header container div
-window.onscroll = function(e){
+    $("#header-title ").fadeIn(2000);
+    $("#header-title").click(function() {
+        counter++;
+        if(counter == 5) {
+            $("#header-title").fadeOut("slow");
+        }
+    });
 	showImages('.star');
-    var startPos = ((e.pageY||document.body.scrollTop) + navbar.offsetHeight);
-    var endPos = about_area.offsetTop + about_area.offsetHeight;
-	//
-    if(about_area.offsetTop <= startPos){
+});
+
+
+$(document).on('scroll', function() {
+	var navbar = document.getElementById('navbarContainer');
+
+	if($(this).scrollTop() >= ($('#about').position().top - 250)) {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,1) !important");
-    }
-	else{
+		showImages('.star');
+	}
+	else {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,.70) !important");
-    }
-};
+	}
+});
 
 function subHeadTypeWriter() {
 	var subHeader = document.createElement('span');
@@ -63,7 +57,7 @@ function subHeadTypeWriter() {
 		setTimeout(timeout,150);
 	}
 
-	timeout('L');
+	timeout();
 }
 
 subHeadTypeWriter();
