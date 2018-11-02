@@ -52,8 +52,8 @@ nav {
 	color: white !important;
 }
 
-.fa {
-	font-size: 25px !important;
+.fab {
+	font-size: 23px !important;
 }
 
 .jumbotron {
@@ -89,6 +89,22 @@ nav {
 		blink-caret .75s step-end infinite;
 }
 
+.skill-icon {
+    font-size: 2.25em !important; 
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border: 1px solid red;
+}
+
+.grid-item {
+	text-align: center;
+	border: 1px solid green;
+	width: 200px;
+}
+
 /*##############################################################
 
 				IDS IDS IDS
@@ -119,17 +135,6 @@ nav {
 	visibility: hidden;
 }
 
-.fadeIn {
-	-webkit-animation: animat_show 0.8s;
-	animation: animat_show 0.8s;
-	visibility: visible !important;
-}
-
-@-webkit-keyframes animat_show {
-	0%{opacity: 0}
-	100%{opacity: 1}
-}
-
 #motto {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -139,8 +144,25 @@ nav {
 	background-color: rgba(0, 0, 0, .70) !important;
 }
 
+/*##############################################################
+
+Animations 
+
+##############################################################*/
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+.fadeIn {
+	-webkit-animation: animat_show 0.8s;
+	animation: animat_show 0.8s;
+	visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+	0%{opacity: 0}
+	100%{opacity: 1}
 }
