@@ -105,11 +105,21 @@ nav {
 	width: 200px;
 }
 
+.contact-item {
+	display: block;
+}
+
+
 /*##############################################################
 
 				IDS IDS IDS
 
 ##############################################################*/
+
+#navbarContainer {
+	background-color: rgba(0, 0, 0, .70) !important;
+}
+
 
 #header-title {
 	font-size: 6.25em;
@@ -140,8 +150,8 @@ nav {
 	padding-bottom: 40px;
 }
 
-#navbarContainer {
-	background-color: rgba(0, 0, 0, .70) !important;
+#contact {
+	padding-bottom: 40px;
 }
 
 /*##############################################################
