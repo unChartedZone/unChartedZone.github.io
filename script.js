@@ -16,7 +16,7 @@ $(document).ready(function() {
     $("#header-title ").fadeIn(2000);
     $("#header-title").click(function() {
         counter++;
-        if(counter == 5) {
+        if(counter == 50) {
             $("#header-title").fadeOut("slow");
         }
     });

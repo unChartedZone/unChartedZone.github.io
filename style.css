@@ -15,12 +15,6 @@ html {
 	font-size: 1rem;
 }
 
-@include media-breakpoint-up(sm) {
-	html {
-		font-size: 1.2rem;
-	}
-}
-
 /* Some basic settings for the whole body */
 body {
 	background-color: white;
@@ -115,6 +109,7 @@ nav {
 
 .contact-item {
 	display: block;
+	font-size: 1.5rem;
 }
 
 
@@ -185,24 +180,46 @@ Animations
 	100%{opacity: 1}
 }
 
-@media (max-width: 576px) { 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
 	#header-title {
-		font-size: 3.5rem;
+		font-size: 5.0rem;
+		color: white;
 	}
 
 	.sub-header {
-		font-size: 1.0rem;
+		font-size: 1.15rem;
+	}
+
+	.contact-item {
+		font-size: 1.25rem;
 	}
 }
 
-@media (min-width: 768px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	#header-title {
+		font-size: 4.0rem;
+	}
+
+	.sub-header {
+		font-size: 1.25rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
 
 }
 
-@media (min-width: 992px) { 
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	#header-title {
+		font-size: 7.5rem;
+	}
 }
 
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
 }
