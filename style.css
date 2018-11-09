@@ -98,12 +98,13 @@ nav {
 .grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	border: 1px solid red;
+	height: 80%;
+	margin: 0;
+	padding: 0;
 }
 
 .grid-item {
 	text-align: center;
-	border: 1px solid green;
 	width: 200px;
 }
 
@@ -157,6 +158,13 @@ nav {
 	padding-bottom: 40px;
 }
 
+#temp {
+	/* border: 1px solid red; */
+	height: 400px;
+	padding: 0;
+	margin: 0;
+}
+
 /*##############################################################
 
 Animations 
@@ -175,7 +183,7 @@ Animations
 	visibility: visible !important;
 }
 
-@-webkit-keyframes animat_show {
+@keyframes animat_show {
 	0%{opacity: 0}
 	100%{opacity: 1}
 }
