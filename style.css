@@ -203,6 +203,10 @@ Animations
 	.contact-item {
 		font-size: 1.25rem;
 	}
+
+	.grid {
+		grid-template-columns: auto;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
