@@ -92,6 +92,10 @@ nav {
 		blink-caret .75s step-end infinite;
 }
 
+.skill-section-header {
+	font-size: 3em;
+}
+
 .skill-icon {
     font-size: 2.25em !important; 
 }
@@ -137,7 +141,7 @@ nav {
 	padding-top: 200px;
 	padding-bottom: 400px;
 	width: 100%;
-	text-align: center;
+	/* text-align: center; */
 }
 
 #operating-systems {
@@ -160,10 +164,18 @@ nav {
 	padding-bottom: 40px;
 }
 
+#skill-header {
+	font-size: 4em;
+}
+
 #web-skills {
 	/* border: 1px solid red; */
 	height: 400px;
 	margin: 0;
+}
+
+#ruby-icon {
+	width: 35px;
 }
 
 /*##############################################################
