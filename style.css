@@ -55,7 +55,7 @@ nav {
 }
 
 .fab {
-	font-size: 23px !important;
+	font-size: 23px !important; /* Default size for font awesome icons*/
 }
 
 .jumbotron {
@@ -129,7 +129,6 @@ nav {
 #navbarContainer {
 	background-color: rgba(0, 0, 0, .70) !important;
 }
-
 
 #header-title {
 	font-size: 6.25em;
