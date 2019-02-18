@@ -78,6 +78,8 @@ nav {
 }
 
 .skill-section {
+	height: 400px;
+	margin: 0;
 	padding-top: 50px;
 }
 
@@ -96,8 +98,16 @@ nav {
 	font-size: 3em;
 }
 
+.skill-section-header span {
+	/* background-color: black; */
+	background: linear-gradient(110deg, #f93d66, #6d47d9);
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+}
+
 .skill-icon {
-    font-size: 2.25em !important; 
+		font-size: 2.5em !important; 
 }
 
 .grid {
@@ -110,8 +120,8 @@ nav {
 }
 
 .grid-item {
-	text-align: center;
 	width: 200px;
+	text-align: center;
 }
 
 .contact-item {
@@ -132,6 +142,13 @@ nav {
 
 #header-title {
 	font-size: 6.25em;
+	padding: 10px;
+}
+
+#header-title span {
+	background: linear-gradient(110deg, #f93d66, #6d47d9);
+	padding: 5px;
+	border-radius: 10px;
 }
 
 #about {
@@ -165,12 +182,6 @@ nav {
 
 #skill-header {
 	font-size: 4em;
-}
-
-#web-skills {
-	/* border: 1px solid red; */
-	height: 400px;
-	margin: 0;
 }
 
 #ruby-icon {
