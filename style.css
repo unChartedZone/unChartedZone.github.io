@@ -122,6 +122,7 @@ nav {
 .grid-item {
 	width: 200px;
 	text-align: center;
+	min-height: 100px;
 }
 
 .contact-item {
@@ -189,6 +190,9 @@ nav {
 
 #django-icon {
 	font-size: 4.0em !important; 
+}
+
+#operating-systems {
 }
 
 /*##############################################################
