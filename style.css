@@ -129,6 +129,7 @@ nav {
 .contact-item {
 	display: block;
 	font-size: 1.5rem;
+	padding-bottom: 20px;
 }
 
 
@@ -179,7 +180,7 @@ nav {
 
 #contact {
 	/* padding-bottom: 40px; */
-	padding: 180px 0;
+	padding: 180px 20px;
 }
 
 #skill-header {
@@ -220,16 +221,16 @@ Animations
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 	#header-title {
-		font-size: 5.0rem;
+		font-size: 2.4rem;
 		color: white;
 	}
 
 	.sub-header {
-		font-size: 1.15rem;
+		font-size: 1.13rem;
 	}
 
 	.contact-item {
-		font-size: 1.25rem;
+		font-size: 1.50rem;
 	}
 
 	.grid {
