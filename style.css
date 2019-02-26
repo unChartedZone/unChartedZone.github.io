@@ -234,7 +234,11 @@ Animations
 	}
 
 	.grid {
-		grid-template-columns: auto;
+		grid-template-columns: auto auto;
+	}
+
+	#operating-systems h2 {
+		font-size: 2.25em;
 	}
 }
 
