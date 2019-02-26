@@ -78,7 +78,8 @@ nav {
 }
 
 .skill-section {
-	height: 500px;
+	/* height: 500px; */
+	height: auto;
 	margin: 0;
 	padding-top: 50px;
 }
@@ -177,7 +178,8 @@ nav {
 }
 
 #contact {
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
+	padding: 180px 0;
 }
 
 #skill-header {
@@ -190,9 +192,6 @@ nav {
 
 #django-icon {
 	font-size: 4.0em !important; 
-}
-
-#operating-systems {
 }
 
 /*##############################################################
