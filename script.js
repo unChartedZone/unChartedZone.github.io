@@ -20,7 +20,7 @@ $(document).ready(function() {
             $("#header-title").fadeOut("slow");
         }
     });
-	showImages('.star');
+	showImages('#myself');
 });
 
 
@@ -29,7 +29,7 @@ $(document).on('scroll', function() {
 
 	if($(this).scrollTop() >= ($('#about').position().top - 250)) {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,1) !important");
-		showImages('.star');
+		showImages('#myself');
 	}
 	else {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,.70) !important");

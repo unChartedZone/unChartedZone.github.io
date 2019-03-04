@@ -166,6 +166,10 @@ nav {
 	padding-bottom: 50px;
 }
 
+#self-description {
+	text-align: center;
+}
+
 #myself {
 	width: 200px;
 	height: 200px;
