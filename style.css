@@ -7,7 +7,7 @@
 
 /*##############################################################
 
-ELEMENTS 
+				ELEMENTS ELEMENTS ELEMENTS
 
 ##############################################################*/
 
@@ -15,20 +15,10 @@ html {
 	font-size: 1rem;
 }
 
-/* Some basic settings for the whole body */
 body {
 	background-color: white;
 	margin: 0;
 	padding: 0;
-}
-
-/* This set the style for the three bar button used for when the navabar collapses */
-button {
-	color: #FFFFFF !important;
-}
-
-nav {
-	text-align: left !important;
 }
 
 /*##############################################################
@@ -41,24 +31,40 @@ nav {
 	clear: both;
 }
 
-.navbar-brand {
-	padding-top: 8px;
+.fab {
+	font-size: 23px !important; /* Default size for font awesome icons*/
 }
+
+/*##############################################################
+				NAVBAR
+##############################################################*/
 
 #navbar-container {
 	background-color: rgba(0, 0, 0, .70) !important;
 }
+
 .nav-item {
 	font-size: 20px;
 	padding-left: 10px;
 }
 
-.nav-item a:hover {
+.nav-link:hover {
 	color: white !important;
 }
 
-.fab {
-	font-size: 23px !important; /* Default size for font awesome icons*/
+/*##############################################################
+				MAIN PAGE SECTION
+##############################################################*/
+
+#header-title {
+	font-size: 6.25em;
+	padding: 10px;
+}
+
+#header-title span {
+	background: linear-gradient(110deg, #f93d66, #6d47d9);
+	padding: 5px;
+	border-radius: 10px;
 }
 
 .jumbotron {
@@ -70,7 +76,6 @@ nav {
 	width: 100%;
 	height: 100vh;
 	background-image: url("./images/foggyGoldenGate.jpg");
-	background-size: auto;
 	background-size: 100% 100vh;
 }
 
@@ -80,22 +85,14 @@ nav {
 	transform: translateY(-50%);
 }
 
+/*##############################################################
+				SKILL SECTION
+##############################################################*/
+
 .skill-section {
-	/* height: 500px; */
 	height: auto;
 	margin: 0;
 	padding-top: 50px;
-}
-
-.sub-header {
-	background-color: black;
-	padding: 5px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
-	font-weight: 300;
-	border-right: .15em solid orange; /* The typwriter cursor */
-	animation: 
-		blink-caret .75s step-end infinite;
 }
 
 .skill-section-header {
@@ -103,7 +100,6 @@ nav {
 }
 
 .skill-section-header span {
-	/* background-color: black; */
 	background: linear-gradient(110deg, #f93d66, #6d47d9);
 	color: white;
 	padding: 5px;
@@ -114,11 +110,20 @@ nav {
 	font-size: 2.5em !important; 
 }
 
+.sub-header {
+	background-color: black;
+	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	border-right: .15em solid orange; /* The typwriter cursor */
+	animation: blink-caret .75s step-end infinite;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	justify-content: space-around;
-	/* grid-gap: 10px; */
 	height: 80%;
 	width: 100%;
 }
@@ -135,84 +140,9 @@ nav {
 	padding-bottom: 20px;
 }
 
-.radio-buttons {
-	padding-left: 1rem;
-	line-height: 2rem;
-}
-
-.radio-button {
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background-color: #C0C0C0;
-	border-radius: 50%;
-}
-
 /*##############################################################
-
-				IDS IDS IDS
-
+				SHOWCASE SECTION
 ##############################################################*/
-
-#navbarContainer {
-	background-color: rgba(0, 0, 0, .70) !important;
-}
-
-#header-title {
-	font-size: 6.25em;
-	padding: 10px;
-}
-
-#header-title span {
-	background: linear-gradient(110deg, #f93d66, #6d47d9);
-	padding: 5px;
-	border-radius: 10px;
-}
-
-#about {
-	margin: 0 auto;
-	/* Should make this div in the center */
-	padding-top: 200px;
-	width: 100%;
-	/* text-align: center; */
-}
-
-#operating-systems {
-	padding-bottom: 50px;
-}
-
-#self-description {
-	text-align: center;
-}
-
-#myself {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	visibility: hidden;
-}
-
-#motto {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-#contact {
-	/* padding-bottom: 40px; */
-	padding: 180px 20px;
-}
-
-#skill-header {
-	font-size: 4em;
-}
-
-#ruby-icon {
-	width: 35px;
-}
-
-#django-icon {
-	font-size: 4.0em !important; 
-}
 
 #showcase-container {
 	padding: 40px 0;
@@ -231,26 +161,105 @@ nav {
 }
 
 #browser-titlebar {
+	display: inline-block;
 	width: 100%;
 	height: 2rem;
 	background-color: #EBEBEB;
+    border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	box-shadow: 0 0 0 1px #ccc;
 }
 
 #close-radio-btn {
-	background-color: rgb(237, 101, 90);
+	background-color: #FF544E;
 }
 
 #min-radio-btn {
-	background-color: rgb(225, 192, 76);
+	background-color: #FFBE2E;
 }
 
 #max-radio-btn {
-	background-color: rgb(113, 189, 70);
+	background-color: #29C840;
+}
+
+#url-bar {
+    width: 40%;
+	height: 70%;
+    margin: 0 auto;
+	background-color: #F9F9F9;
+	border: 1px solid purple;
+}
+
+#url-bar p {
+	font-size: 16px !important;
+	color: #8c8c8c;
+}
+
+.radio-buttons {
+	padding-left: 1rem;
+	line-height: 2rem;
+	width: 10%;
+}
+
+.radio-button {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #C0C0C0;
+	border-radius: 50%;
+}
+
+.browser-titlebar-component {
+	float: left;
 }
 
 /*##############################################################
 
-Animations
+				IDS IDS IDS
+
+##############################################################*/
+
+#about {
+	margin: 0 auto; /* Should make this div in the center */
+	padding-top: 200px;
+	width: 100%;
+}
+
+#self-description {
+	text-align: center;
+}
+
+#myself {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	visibility: hidden;
+}
+
+#motto {
+	padding: 40px 0;
+}
+
+#contact {
+	padding: 180px 20px;
+}
+
+#skill-header {
+	font-size: 4em;
+}
+
+#ruby-icon {
+	width: 35px;
+}
+
+#django-icon {
+	font-size: 4.0em !important; 
+}
+
+
+/*##############################################################
+
+				Animations Animations Animations
 
 ##############################################################*/
 
@@ -270,6 +279,12 @@ Animations
 	0%{opacity: 0}
 	100%{opacity: 1}
 }
+
+/*##############################################################
+
+				Media Queries 
+
+##############################################################*/
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
