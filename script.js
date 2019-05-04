@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
 $(document).on('scroll', function() {
-	var navbar = document.getElementById('navbarContainer');
+	var navbar = document.getElementById('navbar-container');
 
 	if($(this).scrollTop() >= ($('#about').position().top - 250)) {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,1) !important");
