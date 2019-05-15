@@ -161,7 +161,6 @@ body {
 }
 
 #browser-titlebar {
-	display: inline-block;
 	width: 100%;
 	height: 2rem;
 	background-color: #EBEBEB;
@@ -182,23 +181,11 @@ body {
 	background-color: #29C840;
 }
 
-#url-bar {
-    width: 40%;
-	height: 70%;
-    margin: 0 auto;
-	background-color: #F9F9F9;
-	border: 1px solid purple;
-}
-
-#url-bar p {
-	font-size: 16px !important;
-	color: #8c8c8c;
-}
-
 .radio-buttons {
-	padding-left: 1rem;
+	display: inline-block;
+	padding: 0 1rem;
 	line-height: 2rem;
-	width: 10%;
+	border: 1px solid red;
 }
 
 .radio-button {
@@ -209,8 +196,21 @@ body {
 	border-radius: 50%;
 }
 
+#url-bar {
+	height: 75%;
+	width: 12em;
+	background-color: #F9F9F9;
+	border: 1px solid purple;
+	margin: 0 auto;
+}
+
+#url-bar p {
+	font-size: 16px !important;
+	color: #8c8c8c;
+}
+
 .browser-titlebar-component {
-	float: left;
+	display: inline-block;
 }
 
 /*##############################################################
