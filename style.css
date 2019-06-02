@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 @font-face {
 	font-family: Google Sans;
@@ -21,9 +21,13 @@ body {
 	padding: 0;
 }
 
+hr {
+	padding: 0 0 1.5em 0;
+}
+
 /*##############################################################
 
-				CLASSES CLASSES CLASSES
+				Universal Classes
 
 ##############################################################*/
 
@@ -33,6 +37,15 @@ body {
 
 .fab {
 	font-size: 23px !important; /* Default size for font awesome icons*/
+}
+
+.container {
+	margin-top: 13em;
+}
+
+.section-header {
+	font-family: 'Montserrat';
+	font-size: 4em;
 }
 
 /*##############################################################
@@ -145,11 +158,12 @@ body {
 ##############################################################*/
 
 #showcase-container {
-	padding: 40px 0;
+	padding: 4em 0;
 	height: 100%;
 }
 
 #browser {
+	margin: 1em 0 0 0;
 	width: 100%;
 	height: 40em;
 	border-radius: 7px;
@@ -157,7 +171,7 @@ body {
 }
 
 #showcase-header {
-	padding-bottom: 0.5em;
+	font-family: 'Montserrat';
 }
 
 #browser-titlebar {
@@ -242,10 +256,6 @@ body {
 
 #contact {
 	padding: 180px 20px;
-}
-
-#skill-header {
-	font-size: 4em;
 }
 
 #ruby-icon {
