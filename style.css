@@ -216,7 +216,7 @@ hr {
 	position: absolute;
 	padding-left: 1rem;
 	line-height: 2rem;
-	width: 10%;
+	border: 1px solid red;
 }
 
 .radio-button {
