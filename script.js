@@ -2,7 +2,7 @@ new Vue({
 	el: '#app',
 	data: {
 		name: 'Christian Valdez',
-		typewriter: 'California Based Developer'
+		typewriter: 'California Based Developer',
 	},
 	mounted() {
 		// var typewriterInterval = setInterval(() => {
@@ -48,31 +48,4 @@ $(document).on('scroll', function() {
 		navbar.setAttribute("style","background-color: rgba(0,0,0,.70) !important");
 	}
 });
-
-function subHeadTypeWriter() {
-	var subHeader = document.createElement('span');
-	var subHeaderContainer = document.getElementsByClassName('typewriter')[0];
-
-	subHeader.classList.add('sub-header');
-	subHeader.innerHTML = "C";
-	var fullString = 'ALIFORNIA BASED DEVELOPER'
-
-	subHeaderContainer.insertBefore(subHeader,subHeaderContainer.childNodes[0]);
-
-	var counter = 0;
-
-	function timeout() {
-		if(counter == fullString.length) {
-			return;
-		}
-		subHeader.innerHTML = subHeader.innerHTML + fullString.charAt(counter);
-		counter++;
-		setTimeout(timeout,150);
-	}
-
-	timeout();
-}
-
-subHeadTypeWriter();
-
 
