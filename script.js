@@ -1,3 +1,16 @@
+new Vue({
+	el: '#app',
+	data: {
+		name: 'Christian Valdez',
+		typewriter: 'California Based Developer'
+	},
+	mounted() {
+		// var typewriterInterval = setInterval(() => {
+
+		// }, 150)
+	}
+})
+
 function showImages(el) {
 	var windowHeight = jQuery(window).height();
 	$(el).each(function() {
