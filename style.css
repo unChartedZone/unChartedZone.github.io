@@ -59,6 +59,7 @@ hr {
 .nav-item {
 	font-size: 20px;
 	padding-left: 10px;
+	animation: slideUp .5s ease-out;
 }
 
 .nav-link:hover {
@@ -72,6 +73,7 @@ hr {
 #header-title {
 	font-size: 6.25em;
 	padding: 10px;
+	animation: slideDown .5s ease-out;
 }
 
 #header-title span {
@@ -353,3 +355,36 @@ hr {
 @media (min-width: 1200px) { 
 
 }
+
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	80% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
