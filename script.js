@@ -3,6 +3,15 @@ new Vue({
 	data: {
 		name: 'Christian Valdez',
 		typewriter: 'California Based Developer',
+		skills: [
+			{ text: 'C', icon: 'devicon-c-plain' },
+			{ text: 'C++', icon: 'devicon-cplusplus-plain' },
+			{ text: 'Java', icon: 'fa-java' },
+			{ text: 'Python', icon: 'fa-python' },
+			{ text: 'Javascript', icon: 'fa-js-square' },
+			{ text: 'PHP', icon: 'fa-php' },
+			{ text: 'Ruby', icon: 'devicon-ruby-plain' },
+		]
 	},
 	mounted() {
 		// var typewriterInterval = setInterval(() => {
