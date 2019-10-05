@@ -5,12 +5,13 @@
                 <h1 class="section-header">About Me</h1>
                 <hr>
             </div>
-            <div class="col-3 d-flex justify-content-start">
+            <div class="col-12 col-xl-3 d-flex justify-content-center">
                 <img id="myself" src="images/profile-pic.png" alt="Profile Picture">
             </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-                <h3 id="motto">
-                    I am an aspiring full-stack developer with experience in a multitude of fields.
+            <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
+                <h3 class="motto">
+                    I am an aspiring full-stack developer with experience in
+                    a multitude of fields.
                 </h3>
             </div>
         </div>
@@ -155,13 +156,17 @@ export default {
 <style scoped>
 
 .self-description {
-    margin: 15em 0;
+    margin: 10em 0;
 }
 
 #myself {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+}
+
+.motto {
+    font-size: 1.75rem;
 }
 
 #ruby-icon {

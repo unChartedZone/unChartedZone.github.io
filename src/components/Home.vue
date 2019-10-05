@@ -77,7 +77,7 @@ export default {
 <style scoped>
 #header-title {
 	font-size: 6.25em;
-	padding: 10px;
+	padding: 1rem;
 	animation: slideDown .5s ease-out;
 }
 
