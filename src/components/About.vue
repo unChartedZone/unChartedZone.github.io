@@ -1,13 +1,14 @@
 <template>
     <div id="about" class="container">
         <div class="self-description row">
-            <div class="col-12">
-                <h1>About Me</h1>
+            <div class="col-12 mb-5">
+                <h1 class="section-header">About Me</h1>
+                <hr>
             </div>
-            <div class="col-6 d-flex justify-content-center">
+            <div class="col-3 d-flex justify-content-start">
                 <img id="myself" src="images/profile-pic.png" alt="Profile Picture">
             </div>
-            <div class="col-6">
+            <div class="col-6 d-flex justify-content-center align-items-center">
                 <h3 id="motto">
                     I am an aspiring full-stack developer with experience in a multitude of fields.
                 </h3>
@@ -161,10 +162,6 @@ export default {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-}
-
-#motto {
-	padding: 40px 0;
 }
 
 #ruby-icon {
