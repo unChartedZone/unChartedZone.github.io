@@ -1,7 +1,15 @@
 <template>
 <nav id="navbar-container" class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
     <!-- This is the button that will appear on smaller screens -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarTogglerDemo01" 
+        aria-controls="navbarTogglerDemo01" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+    >
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -30,7 +38,6 @@
 .nav-item {
 	font-size: 20px;
 	padding-left: 10px;
-	animation: slideUp .5s ease-out;
 }
 
 .nav-link:hover {
