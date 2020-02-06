@@ -74,17 +74,23 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #header-title {
 	font-size: 6.25em;
 	padding: 1rem;
 	animation: slideDown .5s ease-out;
-}
 
-#header-title span {
+	span {
 	background: linear-gradient(110deg, #f93d66, #6d47d9);
 	padding: 5px;
 	border-radius: 10px;
+
+	}
+
+	@media (max-width: 575.98px) {
+		font-size: 2.4rem;
+		color: white;
+	}
 }
 
 .jumbotron {
@@ -97,18 +103,11 @@ export default {
 	height: 100vh;
     background: url("/images/desk-bg.jpg") no-repeat top;
 	background-size: cover;
-}
+	position: fixed;
+	top: 0;
 
-.jumbotron >.container-fluid {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-@media (max-width: 575.98px) { 
-	#header-title {
-		font-size: 2.4rem;
-		color: white;
+	&>.container-fluid {
+		height: inherit;
 	}
 }
 </style>
