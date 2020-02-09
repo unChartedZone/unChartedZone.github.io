@@ -26,15 +26,15 @@
 				:key="skillset.title"
 			>
 				<h2 class="skill-section-header">{{skillset.title}}</h2>
-                <div class="grid">
+				<div class="grid">
 					<div class="grid-item" v-for="(item, index) in skillset.items" :key="index">
 						<h3>{{item.text}}</h3>
 						<i class="skill-icon" :class="item.icon"></i>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                </div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -45,13 +45,13 @@ export default {
 				programmingLanguages: {
 					title: 'Programming Languages',
 					items: [
-                { text: 'C', icon: 'devicon-c-plain' },
-                { text: 'C++', icon: 'devicon-cplusplus-plain' },
+						{ text: 'C', icon: 'devicon-c-plain' },
+						{ text: 'C++', icon: 'devicon-cplusplus-plain' },
 						{ text: 'Java', icon: 'fab fa-java' },
 						{ text: 'Python', icon: 'fab fa-python' },
 						{ text: 'Javascript', icon: 'fab fa-js-square' },
 						{ text: 'PHP', icon: 'fab fa-php' },
-                { text: 'Ruby', icon: 'devicon-ruby-plain' },
+						{ text: 'Ruby', icon: 'devicon-ruby-plain' },
 						{ text: 'Swift', icon: 'fab fa-swift'}
 					]
 				},
@@ -80,15 +80,20 @@ export default {
 							{ text: 'Github', icon: 'fab fa-github skill-icon' },
 							{ text: 'Gitlab', icon: 'fab fa-gitlab skill-icon' },
 							{ text: 'Gitkraken', icon: 'fab fa-gitkraken skill-icon' },
-            ]
+					]
+				}
+            }
         }
-    }
-}
     }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+.about {
+	position: relative;
+	background-color: white;
+}
 
 .self-description {
     margin: 10em 0;
@@ -116,17 +121,18 @@ export default {
 	height: auto;
 	margin: 0;
 	padding-top: 50px;
-}
 
-.skill-section-header {
-	font-size: 3em;
-}
+	&-header {
+		font-size: 3em;
 
-.skill-section-header span {
-	background: linear-gradient(110deg, #f93d66, #6d47d9);
-	color: white;
-	padding: 5px;
-	border-radius: 10px;
+		span {
+			background: linear-gradient(110deg, #f93d66, #6d47d9);
+			color: white;
+			padding: 5px;
+			border-radius: 10px;
+
+		}
+	}
 }
 
 .skill-icon {
