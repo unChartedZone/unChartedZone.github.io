@@ -1,5 +1,5 @@
 <template>
-    <div id="about" class="container">
+	<div class="about container pt-4">
         <div class="self-description row">
             <div class="col-12 mb-5">
                 <h1 class="section-header">About Me</h1>
@@ -20,135 +20,70 @@
             <h1 class="section-header">Skills</h1>
             <hr>
 
-            <div class="container skill-section">
-                <h2 class="skill-section-header"><span>Languages</span></h2>
+            <div 
+				class="container skill-section" 
+				v-for="skillset in skills" 
+				:key="skillset.title"
+			>
+				<h2 class="skill-section-header">{{skillset.title}}</h2>
                 <div class="grid">
-                    <div class="grid-item" v-for="skill in skills" :key="skill.text">
-                        <h3>{{skill.text}}</h3>
-                        <i class="fab skill-icon" :class="skill.icon"></i>
+					<div class="grid-item" v-for="(item, index) in skillset.items" :key="index">
+						<h3>{{item.text}}</h3>
+						<i class="skill-icon" :class="item.icon"></i>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="web-skills" class="container skill-section">
-                <h2 class="skill-section-header"><span>Web</span></h2>
-                <div class="grid">
-                    <div class="grid-item">
-                        <h3>HTML</h3>
-                        <i class="fab fa-html5 skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>CSS</h3>
-                        <i class="fab fa-css3-alt skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Bootstrap</h3>
-                        <i class="devicon-bootstrap-plain skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Jquery</h3>
-                        <i class="devicon-jquery-plain skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Wordpress</h3>
-                        <i class="fab fa-wordpress skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Node JS</h3>
-                        <i class="fab fa-node skill-icon" style="font-size: 3em !important;"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Django</h3>
-                        <i id="django-icon" class="devicon-django-plain skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Nginx</h3>
-                        <i class="devicon-nginx-original skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>React</h3>
-                        <i class="fab fa-react skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Vue</h3>
-                        <i class="fab fa-vuejs skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Angular</h3>
-                        <i class="fab fa-angular skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>MeteorJS</h3>
-                        <i class="devicon-meteor-plain skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>MongoDB</h3>
-                        <i class="devicon-mongodb-plain skill-icon"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container skill-section">
-                <h2 class="skill-section-header"><span>Operating Systems</span></h2>
-                <div class="grid">
-                    <div class="grid-item">
-                        <h3>macOS</h3>
-                        <i class="fab fa-apple skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Linux</h3>
-                        <i class="fab fa-linux skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Windows</h3>
-                        <i class="fab fa-windows skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Android</h3>
-                        <i class="devicon-android-plain skill-icon"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container skill-section">
-                <h2 class="skill-section-header"><span>Tools</span></h2>
-                <div class="grid">
-                    <div class="grid-item">
-                        <h3>Git</h3>
-                        <i class="devicon-git-plain skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Github</h3>
-                        <i class="fab fa-github skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Gitlab</h3>
-                        <i class="fab fa-gitlab skill-icon"></i>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Gitkraken</h3>
-                        <i class="fab fa-gitkraken skill-icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </template>
 
 <script>
 export default {
 	data() {
         return {
-            skills: [
+            skills: {
+				programmingLanguages: {
+					title: 'Programming Languages',
+					items: [
                 { text: 'C', icon: 'devicon-c-plain' },
                 { text: 'C++', icon: 'devicon-cplusplus-plain' },
-                { text: 'Java', icon: 'fa-java' },
-                { text: 'Python', icon: 'fa-python' },
-                { text: 'Javascript', icon: 'fa-js-square' },
-                { text: 'PHP', icon: 'fa-php' },
+						{ text: 'Java', icon: 'fab fa-java' },
+						{ text: 'Python', icon: 'fab fa-python' },
+						{ text: 'Javascript', icon: 'fab fa-js-square' },
+						{ text: 'PHP', icon: 'fab fa-php' },
                 { text: 'Ruby', icon: 'devicon-ruby-plain' },
+						{ text: 'Swift', icon: 'fab fa-swift'}
+					]
+				},
+				web: {
+					title: 'Web',
+					items: [
+						{ text: 'HTML', icon: "fab fa-html5 skill-icon" },
+						{ text: 'CSS', icon: "fab fa-css3-alt skill-icon" },
+						{ text: 'Bootstrap', icon: "devicon-bootstrap-plain skill-icon" },
+						{ text: 'Jquery', icon: "devicon-jquery-plain skill-icon" },
+						{ text: 'Wordpress', icon: "fab fa-wordpress skill-icon" },
+						{ text: 'Node JS', icon: "fab fa-node skill-icon", style:"font-size: 3em !important;" },
+						{ text: 'Django', icon: "django-icon", class:"devicon-django-plain skill-icon" },
+						{ text: 'Nginx', icon: "devicon-nginx-original skill-icon" },
+						{ text: 'React', icon: "fab fa-react skill-icon" },
+						{ text: 'Vue', icon: "fab fa-vuejs skill-icon" },
+						{ text: 'Angular', icon:"fab fa-angular skill-icon" },
+						{ text: 'MeteorJS', icon: "devicon-meteor-plain skill-icon" },
+						{ text: 'MongoDB' , icon: "devicon-mongodb-plain skill-icon" }
+					]
+				},
+				tools: {
+					title: 'Tools',
+					items: [
+							{ text: 'Git', icon: 'devicon-git-plain skill-icon' },
+							{ text: 'Github', icon: 'fab fa-github skill-icon' },
+							{ text: 'Gitlab', icon: 'fab fa-gitlab skill-icon' },
+							{ text: 'Gitkraken', icon: 'fab fa-gitkraken skill-icon' },
             ]
         }
+    }
+}
     }
 }
 </script>
