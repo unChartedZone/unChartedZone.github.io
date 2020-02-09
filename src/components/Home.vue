@@ -105,6 +105,7 @@ export default {
 	background-size: cover;
 	position: fixed;
 	top: 0;
+	z-index: 4;
 
 	&>.container-fluid {
 		height: inherit;

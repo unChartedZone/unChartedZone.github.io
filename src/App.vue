@@ -2,9 +2,12 @@
   <div id="app">
     <Header></Header>
     <Home></Home>
-    <About></About>
-    <!-- <Showcase></Showcase> -->
-    <Footer></Footer>
+	<div style="height: 100vh;"></div>
+	<div style="position: relative; width: 100%; background-color: white; z-index: 100;">
+		<About></About>
+		<Showcase></Showcase>
+		<Footer></Footer>
+	</div>
   </div>
   <!--<div id="footer"> <h3> <i> The End </i> </h3> </div>-->
 </template>
