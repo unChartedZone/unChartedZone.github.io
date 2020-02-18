@@ -5,7 +5,7 @@
 	<div style="height: 100vh;"></div>
 	<div style="position: relative; width: 100%; background-color: white; z-index: 100;">
 		<About></About>
-		<Showcase></Showcase>
+		<!-- <Showcase></Showcase> -->
 		<Footer></Footer>
 	</div>
   </div>
