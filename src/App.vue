@@ -88,6 +88,10 @@ hr {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+	.section-header {
+		font-size: 3.25rem;
+	}
+
 	.sub-header {
 		font-size: 1.13rem;
 	}

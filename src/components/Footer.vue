@@ -11,10 +11,10 @@
 	height: 100vh;
 
 	&-item {
-	display: block;
-	font-size: 1.5rem;
-	padding-bottom: 20px;
-}
+		display: block;
+		font-size: 1.5rem;
+		padding-bottom: 20px;
+	}
 
 	// Small devices (landscape phones, 576px and up)
 	@media (max-width: 575.98px) { 
@@ -22,6 +22,10 @@
 
 		.section-header {
 			font-size: 3.25rem;
+		}
+
+		&-item {
+			text-align: center;
 		}
 	 }
 }

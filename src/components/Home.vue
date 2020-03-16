@@ -3,7 +3,7 @@
 	<div class="header-bg"></div>
 	<div class="header-content d-flex flex-column align-items-center justify-content-center">
 		<h1 class="header-title">Christian Valdez</h1>
-		<h3>California Based Developer</h3>
+		<h3 class="header-subtitle">California Based Developer</h3>
 	</div>
 </div>
 </template>
@@ -61,4 +61,16 @@ export default {
 	}
 }
 
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	.header-title {
+		font-size: 4.25em;
+		text-align: center;
+	}
+
+	.header-subtitle {
+		font-size: 1.5em;
+	}
+}
 </style>
