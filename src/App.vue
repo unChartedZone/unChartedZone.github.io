@@ -2,7 +2,6 @@
   <div id="app">
     <Header></Header>
     <Home></Home>
-	<div style="height: 100vh;"></div>
 	<div style="position: relative; width: 100%; background-color: white; z-index: 100;">
 		<About></About>
 		<!-- <Showcase></Showcase> -->
@@ -46,6 +45,10 @@ html, body {
   padding: 0;
 }
 
+#app {
+	background-color: white;
+}
+
 hr {
 	padding: 0 0 1.5em 0;
 }
@@ -85,6 +88,10 @@ hr {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+	.section-header {
+		font-size: 3.25rem;
+	}
+
 	.sub-header {
 		font-size: 1.13rem;
 	}

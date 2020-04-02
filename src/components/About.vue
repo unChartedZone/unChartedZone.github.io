@@ -1,11 +1,11 @@
 <template>
 	<div class="about container pt-4">
         <div class="self-description row">
-            <div class="col-12 mb-5">
+            <div class="col-12">
                 <h1 class="section-header">About Me</h1>
                 <hr>
             </div>
-            <div class="col-12 col-xl-3 d-flex justify-content-center">
+            <div class="col-12 col-xl-3 d-flex justify-content-center my-5">
                 <img id="myself" src="images/profile-pic.png" alt="Profile Picture">
             </div>
             <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
@@ -76,10 +76,10 @@ export default {
 				tools: {
 					title: 'Tools',
 					items: [
-							{ text: 'Git', icon: 'devicon-git-plain skill-icon' },
-							{ text: 'Github', icon: 'fab fa-github skill-icon' },
-							{ text: 'Gitlab', icon: 'fab fa-gitlab skill-icon' },
-							{ text: 'Gitkraken', icon: 'fab fa-gitkraken skill-icon' },
+						{ text: 'Git', icon: 'devicon-git-plain skill-icon' },
+						{ text: 'Github', icon: 'fab fa-github skill-icon' },
+						{ text: 'Gitlab', icon: 'fab fa-gitlab skill-icon' },
+						{ text: 'Gitkraken', icon: 'fab fa-gitkraken skill-icon' },
 					]
 				}
             }
