@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
 	  <Home />
   </div>
 </template>
@@ -23,23 +23,93 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+<style lang="scss">
 
 @font-face {
 	font-family: Google Sans;
 	src: url(/fonts/GoogleSans-Regular.ttf);
 }
 
-html, body {
-  background-color: white;
-  box-sizing: border-box;
+$color-primary: #2eacc2;
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+	box-sizing: border-box; 
 }
 
-#app {
-	background-color: white;
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	width: 80%; 
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.align {
+	&-center {
+		align-items: center;
+	}
+}
+
+.justify {
+	&-center {
+		justify-content: center;
+	}
+}
+
+.header {
+	&-primary {
+		font-family: 'Google Sans', sans-serif;
+		font-size: 6.5rem;
+		letter-spacing: 0.1rem;
+	}
+
+	&-secondary {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3.5rem;
+		font-weight: 400;
+	}
+}
+
+.subtitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+.paragraph {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+}
+
+.btn {
+	cursor: pointer;
+
+	&-primary {
+		background-color: $color-primary;
+		border: transparent;
+		border-radius: 7px;
+		color: white;
+		font-size: 1.75rem;
+		padding: 10px;
+		transition: all .2s;
+
+		&:hover {
+			background-color: darken($color-primary, 10);
+		}
+	}
 }
 
 </style>
