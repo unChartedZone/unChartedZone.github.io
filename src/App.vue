@@ -2,6 +2,7 @@
   <div>
 	  <Header />
 	  <Home />
+	  <About />
   </div>
 </template>
 
@@ -25,6 +26,9 @@ export default {
 </script>
 
 <style lang="scss">
+// @import './scss/_variables.scss';
+// @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
 
 @font-face {
 	font-family: Google Sans;
@@ -34,8 +38,8 @@ export default {
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box; 
 }
 
@@ -65,23 +69,27 @@ html {
 
 .paragraph {
 	font-family: $primary-default-font;
-	font-size: 2rem;
+	font-size: 1.75rem;
 }
 
 .btn {
 	cursor: pointer;
 
 	&-primary {
-		background-color: $color-primary;
+		// background-color: $color-primary;
+		background-image: linear-gradient(to right, $color-primary, $color-primary-light);
 		border: transparent;
 		border-radius: 7px;
 		color: white;
 		font-size: 1.75rem;
+		font-family: $primary-default-font;
 		padding: 10px;
 		transition: all .2s;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
 
 		&:hover {
 			background-color: darken($color-primary, 10);
+			transform: translateY(-0.2rem);
 		}
 	}
 }
