@@ -43,31 +43,6 @@ html {
 	font-size: 62.5%;
 }
 
-.container {
-	width: 80%; 
-	margin: 0 auto;
-}
-
-.d-flex {
-	display: flex;
-}
-
-.col {
-	flex-direction: column;
-}
-
-.align {
-	&-center {
-		align-items: center;
-	}
-}
-
-.justify {
-	&-center {
-		justify-content: center;
-	}
-}
-
 .header {
 	&-primary {
 		font-family: 'Google Sans', sans-serif;

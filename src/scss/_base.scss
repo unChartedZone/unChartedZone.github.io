@@ -1,0 +1,44 @@
+.container {
+	width: 75%; 
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.align {
+	&-start { align-items: flex-start; }
+	&-center { align-items: center; }
+	&-end { align-items: flex-end; }
+}
+
+.justify {
+	&-start { justify-content: flex-start; }
+	&-center { justify-content: center; }
+	&-end { justify-content: flex-end; }
+}
+
+.m {
+	&y {
+		&-1 { margin: 2rem 0;}
+		&-2 { margin: 4rem 0;}
+		&-3 { margin: 6rem 0;}
+		&-4 { margin: 8rem 0;}
+	}
+
+	&b {
+		&-1 { margin: 2rem 0;}
+		&-2 { margin: 4rem 0;}
+		&-3 { margin: 6rem 0;}
+		&-4 { margin: 8rem 0;}
+	}
+}
+
+.highlight {
+	color: $color-primary;
+}
