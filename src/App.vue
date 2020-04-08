@@ -30,8 +30,6 @@ export default {
 	src: url(/fonts/GoogleSans-Regular.ttf);
 }
 
-$color-primary: #2eacc2;
-
 *,
 *::after,
 *::before {
@@ -77,20 +75,20 @@ html {
 	}
 
 	&-secondary {
-		font-family: 'Montserrat', sans-serif;
+		font-family: $primary-default-font;
 		font-size: 3.5rem;
 		font-weight: 400;
 	}
 }
 
 .subtitle {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $primary-default-font;
 	font-size: 2.5rem;
 	font-weight: 400;
 }
 
 .paragraph {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $primary-default-font;
 	font-size: 2rem;
 }
 
