@@ -4,7 +4,7 @@
 	<div class="nav-item nav-logo">CV</div>
 
 	<div class="nav-item nav-links">
-		<a href="#" class="nav-link">About Me</a>
+		<a href="#goto" class="nav-link">About Me</a>
 		<a href="#" class="nav-link">Portfolio</a>
 		<a href="#" class="nav-link">Contact</a>
 	</div>

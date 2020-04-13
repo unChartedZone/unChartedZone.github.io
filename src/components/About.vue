@@ -1,6 +1,9 @@
 <template>
-<section class="about container">
-	<h1 class="header-secondary mb-1">About Me</h1>
+<section id="about"  class="about container">
+	<h1 class="header-secondary mb-1">
+		<span id="goto"> &nbsp; </span>
+		About Me
+	</h1>
 	<div class="about-text">
 
 		<p class="paragraph">

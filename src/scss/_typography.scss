@@ -10,6 +10,22 @@
 		font-family: $primary-default-font;
 		font-size: 3.5rem;
 		font-weight: 400;
+
+		span {
+			margin-top: 7rem;        /* Size of fixed header */
+			padding-bottom: 7rem; 
+			display: block; 
+		}
+
+		// &::before {
+		// 	content: '';
+		// 	// margin: -30rem;
+		// 	display: block; 
+		// 	content: " "; 
+		// 	margin-top: -35px; 
+		// 	visibility: hidden; 
+		// 	pointer-events: none;
+		// }
 	}
 }
 
