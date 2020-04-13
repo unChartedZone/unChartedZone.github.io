@@ -3,6 +3,7 @@
 	  <Header />
 	  <Home />
 	  <About />
+	  <Footer />
   </div>
 </template>
 
