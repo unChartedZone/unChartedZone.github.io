@@ -6,7 +6,7 @@
 		<span class="name">Christian Valdez</span>
 	</h1>
 	<h2 class="subtitle">California Based Developer</h2>
-	<a href="#" class="home-btn btn btn-primary my-1">
+	<a class="home-btn btn btn-primary my-1">
 		About Me
 		<i class="fa fa-chevron-circle-down" />
 	</a>
