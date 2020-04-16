@@ -4,13 +4,26 @@
 	<div class="nav-item nav-logo">CV</div>
 
 	<div class="nav-item nav-links">
-		<a href="#goto" class="nav-link">About Me</a>
-		<a href="#" class="nav-link">Portfolio</a>
-		<a href="#" class="nav-link">Contact</a>
+		<div class="nav-link" @click="scrollJumper('about')"><a>About Me</a> </div>
+		<div class="nav-link" @click="scrollJumper('contact')"><a>Portfolio</a></div>
+		<div class="nav-link" @click="scrollJumper('contact')"><a>Contact</a></div>
 	</div>
 
 </nav>
 </template>
+
+<script>
+export default {
+	methods: {
+		scrollJumper(id) {
+			let offset = 90 // Size of navbar + 20 pixels for a little padding
+			let section = document.getElementById(id)
+			console.log(section.offsetTop)
+			window.scrollTo(0,section.offsetTop - offset)
+		}
+	}
+}
+</script>
 
 <style lang="scss" scoped>
 nav {
@@ -33,20 +46,22 @@ nav {
 	}
 
 	&-link {
+		cursor: pointer;
 		display: inline-block;
 		color: black;
 		font-size: 1.65rem;
 		font-family: $primary-default-font;
-		text-decoration: none;
+		padding: 0 1rem;
 		transition: all .2s;
+		user-select: none;
+
+		a {
+			text-decoration: none;
+		}
 
 		&:hover {
 			color: $color-primary;
 			transform: translateY(-0.2rem) scale(1.02);
-		}
-
-		&:not(:last-child) {
-			padding: 0 2rem 0 0;
 		}
 	}
 }

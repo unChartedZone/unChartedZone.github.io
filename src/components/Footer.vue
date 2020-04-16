@@ -1,5 +1,5 @@
 <template>
-<section class="footer">
+<section id="contact" class="footer">
 	<div class="container">
 		<h1 class="header-primary">Contact Me!</h1>
 	</div>
