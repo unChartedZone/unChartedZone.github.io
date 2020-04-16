@@ -37,6 +37,10 @@ i {
 	&-page {
 		height: 100vh;
 	}
+
+	&-btn {
+		animation: slide-in-up ease-out .7s;
+	}
 }
 
 .name {

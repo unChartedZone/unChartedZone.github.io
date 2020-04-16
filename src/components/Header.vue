@@ -31,6 +31,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	box-shadow: 0px 5px 10px rgba(#000000, .2);
+	animation: slide-in-down .7s ease-in-out;
 }
 
 .nav {

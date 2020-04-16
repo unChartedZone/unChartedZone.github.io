@@ -15,7 +15,7 @@
 		</p>
 
 		<p class="paragraph">
-			However for web development. I am completely self taught.
+			However, for web development I am completely self taught.
 			Starting with the basics of HTML, CSS, and Javascript, I later
 			moved onto other UI tools such as Jquery and Bootstrap.
 		</p>
