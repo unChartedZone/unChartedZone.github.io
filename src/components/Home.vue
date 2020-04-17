@@ -1,6 +1,6 @@
 <template>
 <section class="home-page container d-flex align-start justify-center col">
-	<h2 class="header-primary">Hello 👋,</h2>
+	<h2 class="header-primary">Hello <span class="hand-emoji">👋</span>,</h2>
 	<h1 class="header-primary">
 		<span>I'm</span>
 		<span class="name">Christian Valdez</span>
@@ -52,6 +52,15 @@ i {
 
 .header-primary {
 	animation: slide-in-left ease-out .7s;
+}
+
+.hand-emoji {
+	display: inline-block;
+	transition: all .4s;
+
+	&:hover {
+		transform: rotate(75deg);
+	}
 }
 
 </style>
