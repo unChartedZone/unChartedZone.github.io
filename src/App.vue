@@ -3,6 +3,7 @@
 	  <Header />
 	  <Home />
 	  <About />
+	  <!-- <Portfolio /> -->
 	  <Footer />
   </div>
 </template>
@@ -11,8 +12,10 @@
 import Header from './components/Header.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
-import Showcase from './components/Showcase.vue'
+import Portfolio from './components/Portfolio.vue'
 import Footer from './components/Footer.vue'
+
+// import Showcase from './components/Showcase.vue'
 
 export default {
   name: 'app',
@@ -20,8 +23,9 @@ export default {
     Header,
     Home,
     About,
-    Showcase,
+	Portfolio,
     Footer
+    // Showcase,
   }
 }
 </script>

@@ -1,7 +1,10 @@
 <template>
 <section id="contact" class="footer">
-	<div class="container">
-		<h1 class="header-primary">Contact Me!</h1>
+	<div class="container d-flex align-center justify-center column">
+		<div class="footer-body">
+			<h1 class="header-secondary">Contact Me!</h1>
+			<p class="paragraph">If you want to talk, you can find me at</p>
+		</div>
 	</div>
 </section>
 </template>
@@ -9,12 +12,15 @@
 <style scoped lang="scss">
 
 .footer {
-	height: 100vh;
+	padding: 25rem 0;
+
+	&-body {
+		text-align: center;
+	}
 }
 
 
-.header-primary{
-	text-align: center;
-	padding: 2rem 0;
+.header-secondary{
+	padding: 0 0 7rem ;
 }
 </style>
