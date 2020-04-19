@@ -11,13 +11,18 @@
 
 		<p class="paragraph">
 			There I learned important skills such as data structures, dynamic
-			algorithms, and the intricaies of operating systems
+			algorithms, and the intricaies of operating systems. I also
+			learned the fundamentals of Object-oriented programming languages
+			such as <span class="highlight">Java</span> and 
+			<span class="highlight">C++.</span>
 		</p>
 
 		<p class="paragraph">
-			However, for web development I am completely self taught.
-			Starting with the basics of HTML, CSS, and Javascript, I later
-			moved onto other UI tools such as Jquery and Bootstrap.
+			Meanwhile in school, I wanted to learn to learn about web and
+			mobile development however, there were no classes offered at my
+			school. So I decided to teach myself. Starting with the basics of
+			HTML, CSS, and Javascript, I later moved onto other UI frameworks
+			such as Jquery and Bootstrap.
 		</p>
 
 	</div>

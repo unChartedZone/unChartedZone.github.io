@@ -1,5 +1,6 @@
-html {
+html,body {
 	scroll-behavior: smooth;
+	font-family: $primary-default-font;
 }
 
 .container {

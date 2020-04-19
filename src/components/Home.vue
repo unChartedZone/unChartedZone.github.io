@@ -3,7 +3,7 @@
 	<h2 class="header-primary">Hello <span class="hand-emoji">👋</span>,</h2>
 	<h1 class="header-primary"> I'm <span class="name">Christian Valdez</span></h1>
 	<h2 class="subtitle">California Based Developer</h2>
-	<a class="home-btn btn btn-primary my-1" @click="scrollJumper({id: 'about'})">
+	<a class="home-btn btn-primary my-1" @click="scrollJumper({id: 'about'})">
 		About Me
 		<i class="fa fa-chevron-circle-down" />
 	</a>
