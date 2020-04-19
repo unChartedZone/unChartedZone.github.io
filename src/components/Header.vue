@@ -4,23 +4,20 @@
 	<div class="nav-item nav-logo">CV</div>
 
 	<div class="nav-item nav-links">
-		<div class="nav-link" @click="scrollJumper('about')"><a>About Me</a> </div>
-		<div class="nav-link" @click="scrollJumper('contact')"><a>Portfolio</a></div>
-		<div class="nav-link" @click="scrollJumper('contact')"><a>Contact</a></div>
+		<div class="nav-link" @click="scrollJumper({ id:'about'})"><a>About Me</a> </div>
+		<div class="nav-link" @click="scrollJumper({ id:'contact'})"><a>Portfolio</a></div>
+		<div class="nav-link" @click="scrollJumper({ id:'contact'})"><a>Contact</a></div>
 	</div>
 
 </nav>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
 	methods: {
-		scrollJumper(id) {
-			let offset = 90 // Size of navbar + 20 pixels for a little padding
-			let section = document.getElementById(id)
-			console.log(section.offsetTop)
-			window.scrollTo(0,section.offsetTop - offset)
-		}
+		...mapMutations(['scrollJumper'])
 	}
 }
 </script>

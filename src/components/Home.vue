@@ -1,12 +1,9 @@
 <template>
 <section class="home-page container d-flex align-start justify-center col">
 	<h2 class="header-primary">Hello <span class="hand-emoji">👋</span>,</h2>
-	<h1 class="header-primary">
-		<span>I'm</span>
-		<span class="name">Christian Valdez</span>
-	</h1>
+	<h1 class="header-primary"> I'm <span class="name">Christian Valdez</span></h1>
 	<h2 class="subtitle">California Based Developer</h2>
-	<a class="home-btn btn btn-primary my-1">
+	<a class="home-btn btn btn-primary my-1" @click="scrollJumper({id: 'about'})">
 		About Me
 		<i class="fa fa-chevron-circle-down" />
 	</a>
@@ -14,11 +11,16 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
 	data() {
 		return {
 			subtitle: 'California Based Developer'
 		}
+	},
+	methods: {
+		...mapMutations(['scrollJumper'])
 	}
 }
 </script>
@@ -47,7 +49,7 @@ i {
 	background-image: linear-gradient(to right, $color-primary, $color-primary-light);
 	-webkit-background-clip: text;
 	color: transparent;
-	padding: 0 2rem;
+	// padding: 0 2rem;
 }
 
 .header-primary {
