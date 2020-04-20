@@ -1,76 +1,68 @@
 <template>
-<div class="header">
-	<div class="header-bg"></div>
-	<div class="header-content d-flex flex-column align-items-center justify-content-center">
-		<h1 class="header-title">Christian Valdez</h1>
-		<h3 class="header-subtitle">California Based Developer</h3>
-	</div>
-</div>
+<section class="home-page container d-flex align-start justify-center col">
+	<h2 class="header-primary">Hello <span class="hand-emoji">👋</span>,</h2>
+	<h1 class="header-primary"> I'm <span class="name">Christian Valdez</span></h1>
+	<h2 class="subtitle">California Based Developer</h2>
+	<a class="home-btn btn-primary my-1" @click="scrollJumper({id: 'about'})">
+		About Me
+		<i class="fa fa-chevron-circle-down" />
+	</a>
+</section>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
-    data() {
-        return {
-            name: 'Christian Valdez',
-            typewriter: 'California Based Developer',
-        }
-    },
-    methods: {
-        temp() {
-            console.log('hello world')
-        }
-    },
-    created() {
-        // window.addEventListener('scroll', this.temp)
-    }
+	data() {
+		return {
+			subtitle: 'California Based Developer'
+		}
+	},
+	methods: {
+		...mapMutations(['scrollJumper'])
+	}
 }
 </script>
 
 <style lang="scss" scoped>
-.header {
-	background-color: black;
-	color: white;
-	position: relative;
-	height: 100vh;
 
-	&-bg {
-		background: url("/images/desk-bg.jpg");
-		background-size: cover;
-		filter: blur(4px);
-		font-family: 'Google Sans';
-		width: 100%;
+i {
+	padding: 0 0.5rem;
+}
+
+.subtitle {
+	animation: slide-in-right ease-out .7s;
+}
+
+.home {
+	&-page {
 		height: 100vh;
-		position: fixed;
-		top: 0;
-		z-index: 4;
-		overflow: hidden;
 	}
 
-	&-content {
-		height: 100vh;
-		position: fixed;
-		z-index: 5;
-		width: 100%;
-	}
-
-	&-title {
-		font-size: 6.25em;
-		padding: 1rem;
-		animation: slideDown .5s ease-out;
+	&-btn {
+		animation: slide-in-up ease-out .7s;
 	}
 }
 
+.name {
+	background-image: linear-gradient(to right, $color-primary, $color-primary-light);
+	-webkit-background-clip: text;
+	color: transparent;
+	// padding: 0 2rem;
+}
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-	.header-title {
-		font-size: 4.25em;
-		text-align: center;
-	}
+.header-primary {
+	animation: slide-in-left ease-out .7s;
+}
 
-	.header-subtitle {
-		font-size: 1.5em;
+.hand-emoji {
+	display: inline-block;
+	transition: all .4s;
+
+	&:hover {
+		transform: rotate(75deg);
 	}
 }
+
 </style>
