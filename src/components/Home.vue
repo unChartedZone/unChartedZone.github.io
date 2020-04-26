@@ -33,6 +33,10 @@ i {
 
 .subtitle {
 	animation: slide-in-right ease-out .7s;
+
+	@include respond(sm) {
+		font-size: 1.75rem;
+	}
 }
 
 .home {
@@ -49,11 +53,14 @@ i {
 	background-image: linear-gradient(to right, $color-primary, $color-primary-light);
 	-webkit-background-clip: text;
 	color: transparent;
-	// padding: 0 2rem;
 }
 
 .header-primary {
 	animation: slide-in-left ease-out .7s;
+
+	@include respond(sm) {
+		font-size: 2.80rem;
+	}
 }
 
 .hand-emoji {

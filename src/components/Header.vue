@@ -41,6 +41,10 @@ nav {
 
 	&-item {
 		padding: 0 6rem;
+
+		@include respond(sm) {
+			padding: 0 2.25rem;
+		}
 	}
 
 	&-link {

@@ -47,6 +47,10 @@ export default {
 		p:not(:last-child) {
 			margin: 0 0 2rem 0;
 		}
+
+		@include respond(sm) {
+			width: 100%;
+		}
 	}
 }
 </style>

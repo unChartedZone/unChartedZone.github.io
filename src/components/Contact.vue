@@ -5,9 +5,9 @@
 
 			<h1 class="header-secondary">Contact Me!</h1>
 			<p class="paragraph">If you want to talk, you can find me at</p>
-			<a href="#" class="email">christianbvaldez36@gmail.com</a>
+			<a href="#" class="email my-2">christianbvaldez36@gmail.com</a>
 
-			<div class="contact-links d-flex justify-center">
+			<div class="contact-links my-1 d-flex justify-center">
 				<a 
 					href="https://github.com/unChartedZone" 
 					class="btn-fab mr-1"
@@ -33,9 +33,9 @@
 	</div>
 	<div class="footer">
 		<!-- <h1 class="footer-header">Christian Valdez</h1> -->
-		<h1 class="footer-header">CV</h1>
+		<h1 class="footer-header mt-1">CV</h1>
 		<h2 class="footer-subheader">Full Stack Developer</h2>
-		<p class="footer-copyright">Copyright &copy; 2020, CV</p>
+		<p class="footer-copyright mb-4">Copyright &copy; 2020, CV</p>
 	</div>
 </section>
 </template>
@@ -44,14 +44,17 @@
 
 .contact {
 	position: relative;
-	padding: 30rem 0;
 
 	&-body {
 		text-align: center;
+	}
+}
 
-		& > :not(:first-child) {
-			margin: 0 0 3rem;
-		}
+.paragraph {
+	@include respond(sm) {
+		display: inline-block;
+		width: 80%;
+		margin: 0 auto;
 	}
 }
 
@@ -75,8 +78,6 @@
 }
 
 .footer {
-	position: absolute;
-	bottom: 6rem;
 	text-align: center;
 	width: 100%;
 
