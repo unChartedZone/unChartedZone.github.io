@@ -18,7 +18,7 @@
 			</p>
 
 			<p class="paragraph">
-				Meanwhile in school, I wanted to learn to learn about web and
+				Meanwhile in school, I wanted to learn about web and
 				mobile development however, there were no classes offered at my
 				school. So I decided to teach myself. Starting with the basics of
 				HTML, CSS, and Javascript, I later moved onto other UI frameworks

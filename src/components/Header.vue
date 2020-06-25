@@ -1,15 +1,22 @@
 <template>
-<nav class="nav d-flex align-center" style="justify-content: space-between;">
+	<nav
+		class="nav d-flex align-center"
+		style="justify-content: space-between;"
+	>
+		<div class="nav-item nav-logo">CV</div>
 
-	<div class="nav-item nav-logo">CV</div>
-
-	<div class="nav-item nav-links">
-		<div class="nav-link" @click="scrollJumper({ id:'about'})"><a>About Me</a> </div>
-		<div class="nav-link" @click="scrollJumper({ id:'contact'})"><a>Portfolio</a></div>
-		<div class="nav-link" @click="scrollJumper({ id:'contact'})"><a>Contact</a></div>
-	</div>
-
-</nav>
+		<div class="nav-item nav-links">
+			<div class="nav-link" @click="scrollJumper({ id: 'about' })">
+				<a>About Me</a>
+			</div>
+			<div class="nav-link" @click="scrollJumper({ id: 'contact' })">
+				<a>Portfolio</a>
+			</div>
+			<div class="nav-link" @click="scrollJumper({ id: 'contact' })">
+				<a>Contact</a>
+			</div>
+		</div>
+	</nav>
 </template>
 
 <script>
@@ -27,8 +34,8 @@ nav {
 	height: 7rem;
 	position: fixed;
 	width: 100%;
-	box-shadow: 0px 5px 10px rgba(#000000, .2);
-	animation: slide-in-down .7s ease-in-out;
+	box-shadow: 0px 5px 10px rgba(#000000, 0.2);
+	animation: slide-in-down 0.7s ease-in-out;
 }
 
 .nav {
@@ -54,7 +61,7 @@ nav {
 		font-size: 1.65rem;
 		font-family: $primary-default-font;
 		padding: 0 1rem;
-		transition: all .2s;
+		transition: all 0.2s;
 		user-select: none;
 
 		a {
