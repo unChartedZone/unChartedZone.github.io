@@ -1,11 +1,13 @@
-
 // Abstract
 @import './abstracts/mixins';
+@import './abstracts/variables';
 
-@import './variables';
-@import './base';
-@import './animations';
-@import './typography';
+@import './base/base';
+@import './base/animations';
+@import './base/typography';
+
+// Sections
+@import './views/portfolio';
 
 // Components
 @import './components/button';
