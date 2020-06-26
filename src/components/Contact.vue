@@ -5,7 +5,7 @@
 
 			<h1 class="header-secondary">Contact Me!</h1>
 			<p class="paragraph">If you want to talk, you can find me at</p>
-			<a href="#" class="email my-2">christianbvaldez36@gmail.com</a>
+			<a href="mailto:me@chrisvaldez.dev" class="email my-2">me@chrisvaldez.dev</a>
 
 			<div class="contact-links my-1 d-flex justify-center">
 				<a 

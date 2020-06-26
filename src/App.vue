@@ -3,7 +3,7 @@
 	  <Header />
 	  <Home />
 	  <About />
-	  <!-- <Portfolio /> -->
+	  <Portfolio />
 	  <Contact />
   </div>
 </template>
