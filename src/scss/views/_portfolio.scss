@@ -1,12 +1,43 @@
 .portfolio {
   &__item {
+    margin: 7rem 0;
     width: 100%;
-    display: flex;
   }
 
-  &__image,
-  &__info {
-    padding: 1rem;
-    width: 50%;
+  &__header {
+    text-align: center;
+    margin: 0 0 3rem;
+  }
+
+  &__title {
+    display: inline-block;
+    background-color: $color-primary;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.8rem;
+    transform: skewY(-5deg);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__image {
+    padding: 0 2rem;
+
+    img {
+      border: 1px solid #eeeeee;
+      border-radius: 7px;
+      height: 100%;
+      width: 100%;
+      box-shadow: 5px 5px 8px rgba(#000000, 0.2);
+    }
+  }
+
+  &__body {
+    font-size: 1.5rem;
+    padding: 0 2rem;
   }
 }
