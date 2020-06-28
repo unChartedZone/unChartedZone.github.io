@@ -1,5 +1,5 @@
 <template>
-<section id="contact" class="contact">
+<section id="contact" class="contact my-4">
 	<div class="container d-flex align-center justify-center column">
 		<div class="contact-body">
 
