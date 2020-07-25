@@ -36,7 +36,9 @@ export default {
       projects: [
         {
           title: 'My Portfolio!',
-          description: "This very website you're on right now!",
+          description: `
+            This very website you're on right now! I made this website with VueJS and have it hosted on Github Pages.
+          `,
           imgSrc: require('@/assets/images/portfolioScreenshot.png')
         },
         {
