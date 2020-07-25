@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav d-flex align-center" style="justify-content: space-between;">
+  <nav class="nav d-flex align-center">
     <div class="nav-item nav-logo">CV</div>
 
     <div class="nav-item nav-links">
@@ -27,16 +27,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav {
+.nav {
+  background-color: white;
   height: 7rem;
   position: fixed;
   width: 100%;
   box-shadow: 0px 5px 10px rgba(#000000, 0.2);
+  justify-content: space-between;
   animation: slide-in-down 0.7s ease-in-out;
-}
-
-.nav {
-  background-color: white;
+  z-index: 10;
 
   &-logo {
     font-family: 'Google Sans';
