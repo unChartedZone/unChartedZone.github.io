@@ -7,7 +7,7 @@
     <h2 class="subtitle">California Based Developer</h2>
     <a class="home-btn btn-primary my-1" @click="scrollJumper({ id: 'about' })">
       About Me
-      <i class="fa fa-chevron-circle-down" />
+      <i class="fas fa-chevron-down"></i>
     </a>
   </section>
 </template>

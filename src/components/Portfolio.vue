@@ -22,6 +22,10 @@
             /> -->
           <div class="portfolio__body">
             <p class="portfolio__copy">{{ project.description }}</p>
+            <button class="btn--pill">
+              <i class="fab fa-github"></i>
+              Source
+            </button>
           </div>
         </div>
       </div>
@@ -37,14 +41,18 @@ export default {
         {
           title: 'My Portfolio!',
           description: `
-            This very website you're on right now! I made this website with VueJS and have it hosted on Github Pages.
+            This very website you're on right now! I made this website with
+            VueJS and have it hosted on Github Pages. Orginally my portfolio
+            was built with only with vanilla HTML and CSS but over time it
+            became hard to manage and update, with Vue I can easily swap out
+            components and keep my portfolio up to date.
           `,
           imgSrc: require('@/assets/images/portfolioScreenshot.png')
         },
         {
           title: 'Ice Cream Buisness Management System',
           description: 'More details coming soon!',
-          imgSrc: require('@/assets/images/portfolioScreenshot.png')
+          imgSrc: require('@/assets/images/iceCreamScreenshot.png')
         }
       ]
     }
