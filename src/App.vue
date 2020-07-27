@@ -1,10 +1,10 @@
 <template>
   <div>
-	  <Header />
-	  <Home />
-	  <About />
-	  <Portfolio />
-	  <Contact />
+    <Header />
+    <Home />
+    <About />
+    <Portfolio />
+    <Contact />
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
     Header,
     Home,
     About,
-	Portfolio,
+    Portfolio,
     Contact
     // Showcase,
   }
@@ -36,20 +36,19 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
 
 @font-face {
-	font-family: Google Sans;
-	src: url(/fonts/GoogleSans-Regular.ttf);
+  font-family: Google Sans;
+  src: url(/fonts/GoogleSans-Regular.ttf);
 }
 
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 </style>
