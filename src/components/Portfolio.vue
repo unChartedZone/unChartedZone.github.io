@@ -49,11 +49,11 @@ export default {
           `,
           imgSrc: require('@/assets/images/portfolioScreenshot.png'),
         },
-        {
-          title: 'Ice Cream Buisness Management System',
-          description: 'More details coming soon!',
-          imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
-        },
+        // {
+        //   title: 'Ice Cream Buisness Management System',
+        //   description: 'More details coming soon!',
+        //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
+        // },
         // {
         //   title: 'Weather App',
         //   description: '',
