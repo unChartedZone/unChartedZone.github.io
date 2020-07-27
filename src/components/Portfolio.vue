@@ -47,15 +47,25 @@ export default {
             became hard to manage and update, with Vue I can easily swap out
             components and keep my portfolio up to date.
           `,
-          imgSrc: require('@/assets/images/portfolioScreenshot.png')
+          imgSrc: require('@/assets/images/portfolioScreenshot.png'),
         },
         {
           title: 'Ice Cream Buisness Management System',
           description: 'More details coming soon!',
-          imgSrc: require('@/assets/images/iceCreamScreenshot.png')
-        }
-      ]
+          imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
+        },
+        // {
+        //   title: 'Weather App',
+        //   description: '',
+        //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
+        // },
+        // {
+        //   title: 'Todo App',
+        //   description: '',
+        //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
+        // },
+      ],
     }
-  }
+  },
 }
 </script>
