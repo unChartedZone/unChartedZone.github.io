@@ -81,12 +81,17 @@
 
   &-header {
     font-family: 'Google Sans', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
   }
 
   &-subheader {
     font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  &-copyright {
+    font-size: 1.5rem;
   }
 }
 </style>
