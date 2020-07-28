@@ -16,17 +16,20 @@
           <div class="portfolio__image">
             <img :src="`${project.imgSrc}`" alt="" />
           </div>
-          <!-- <img
-              src="@/assets/images/portfolioScreenshot.png"
-              alt="Screenshot of Portfolio"
-            /> -->
           <div class="portfolio__body">
             <p class="portfolio__copy">{{ project.description }}</p>
             <div>
-              <button class="btn--pill">
+              <z-link class="mr-1" url="https://chrisvaldez.dev">
+                <i class="fas fa-paper-plane"></i>
+                Visit
+              </z-link>
+              <z-link
+                url="https://github.com/unChartedZone/unChartedZone.github.io"
+                outlined
+              >
                 <i class="fab fa-github"></i>
                 Source
-              </button>
+              </z-link>
             </div>
           </div>
         </div>
