@@ -22,10 +22,12 @@
             /> -->
           <div class="portfolio__body">
             <p class="portfolio__copy">{{ project.description }}</p>
-            <button class="btn--pill">
-              <i class="fab fa-github"></i>
-              Source
-            </button>
+            <div>
+              <button class="btn--pill">
+                <i class="fab fa-github"></i>
+                Source
+              </button>
+            </div>
           </div>
         </div>
       </div>

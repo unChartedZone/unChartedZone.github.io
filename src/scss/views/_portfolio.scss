@@ -28,7 +28,6 @@
     padding: 0 2rem;
 
     img {
-      border: 1px solid #eeeeee;
       border-radius: 7px;
       height: 100%;
       width: 100%;
@@ -39,6 +38,9 @@
   &__body {
     font-size: 1.5rem;
     padding: 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
   }
 
   &__copy {

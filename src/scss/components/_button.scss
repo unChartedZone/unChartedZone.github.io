@@ -14,7 +14,7 @@
     font-size: 1.75rem;
     font-family: $primary-default-font;
     padding: 10px;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
@@ -50,7 +50,7 @@
     height: 4rem;
     width: 4rem;
     text-decoration: none;
-    transition: all 0.1s;
+    transition: all 0.2s ease-in-out;
   }
 
   &:hover {
@@ -66,8 +66,14 @@
   background: transparent;
   padding: 1.152rem 2.678rem;
   font-family: $primary-default-font !important;
-  font-size: 9.6px;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+  cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
 }
