@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="contact my-4">
-    <div class="container d-flex align-center justify-center column">
+    <div class="container mx-auto d-flex align-center justify-center column">
       <div class="contact-body">
         <h1 class="header-secondary">Contact Me!</h1>
         <p class="paragraph">If you want to talk, you can find me at</p>

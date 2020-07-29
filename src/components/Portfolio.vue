@@ -1,6 +1,6 @@
 <template>
   <section id="portfolio" class="portfolio-section my-4">
-    <div class="container d-flex col justify-center">
+    <div class="container mx-auto d-flex col justify-center">
       <h2 class="header-secondary text-center">Portfolio</h2>
       <div
         class="portfolio__item"
@@ -19,14 +19,11 @@
           <div class="portfolio__body">
             <p class="portfolio__copy">{{ project.description }}</p>
             <div>
-              <z-link class="mr-1" url="https://chrisvaldez.dev">
+              <z-link class="mr-1" :url="project.siteLink">
                 <i class="fas fa-paper-plane"></i>
                 Visit
               </z-link>
-              <z-link
-                url="https://github.com/unChartedZone/unChartedZone.github.io"
-                outlined
-              >
+              <z-link :url="project.githubLink" outlined>
                 <i class="fab fa-github"></i>
                 Source
               </z-link>
@@ -53,12 +50,23 @@ export default {
             components and keep my portfolio up to date.
           `,
           imgSrc: require('@/assets/images/portfolioScreenshot.png'),
+          siteLink: 'https://chrisvaldez.dev',
+          githubLink:
+            'https://github.com/unChartedZone/unChartedZone.github.io',
         },
-        // {
-        //   title: 'Ice Cream Buisness Management System',
-        //   description: 'More details coming soon!',
-        //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
-        // },
+        {
+          title: 'Ice Cream Buisness Management System',
+          description: `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            pariatur! Dolore, incidunt unde voluptatum quae esse libero laborum
+            laudantium, ratione quo cupiditate tenetur voluptatem nam vel,
+            inventore sit nihil recusandae.
+          `,
+          imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
+          siteLink: 'https://icecream.chrisvaldez.dev',
+          githubLink:
+            'https://github.com/unChartedZone/unChartedZone.github.io',
+        },
         // {
         //   title: 'Weather App',
         //   description: '',

@@ -24,9 +24,9 @@ export default {
     Home,
     About,
     Portfolio,
-    Contact
+    Contact,
     // Showcase,
-  }
+  },
 }
 </script>
 

@@ -1,5 +1,7 @@
 <template>
-  <section class="home-page container d-flex align-start justify-center col">
+  <section
+    class="home-page container mx-auto d-flex align-start justify-center col"
+  >
     <h1 class="header-primary">
       Hello <span class="hand-emoji">👋</span>,<br />
       I'm <span class="name">Christian Valdez</span>
@@ -18,12 +20,12 @@ import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
-      subtitle: 'California Based Developer'
+      subtitle: 'California Based Developer',
     }
   },
   methods: {
-    ...mapMutations(['scrollJumper'])
-  }
+    ...mapMutations(['scrollJumper']),
+  },
 }
 </script>
 
