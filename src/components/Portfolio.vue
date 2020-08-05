@@ -66,8 +66,7 @@ export default {
           `,
           imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
           siteLink: 'https://icecream.chrisvaldez.dev',
-          githubLink:
-            'https://github.com/unChartedZone/unChartedZone.github.io',
+          githubLink: 'https://github.com/unChartedZone/IceCreamIMS',
         },
         // {
         //   title: 'Weather App',

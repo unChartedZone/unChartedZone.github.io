@@ -1,5 +1,11 @@
 <template>
-  <a :href="url" class="link" :class="{ 'link--outlined': outlined }">
+  <a
+    :href="url"
+    class="link"
+    target="_blank"
+    rel="noopener noreferrer"
+    :class="{ 'link--outlined': outlined }"
+  >
     <slot />
   </a>
 </template>

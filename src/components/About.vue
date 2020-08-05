@@ -5,12 +5,9 @@
       <p class="paragraph">
         I am a full stack developer from San Diego, California. I earned my
         Bachelor's Degree in
-        <span class="highlight">Computer Science</span> from SDSU in 2018.
-      </p>
-
-      <p class="paragraph">
-        There I learned important skills such as data structures, dynamic
-        algorithms, and the intricaies of operating systems. I also learned the
+        <span class="highlight">Computer Science</span> from SDSU in 2018. There
+        I learned important skills such as data structures, dynamic algorithms,
+        and the complexities of operating systems. I also learned the
         fundamentals of Object-oriented programming languages such as
         <span class="highlight">Java</span> and
         <span class="highlight">C++.</span>

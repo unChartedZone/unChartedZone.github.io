@@ -36,10 +36,6 @@ i {
 
 .subtitle {
   animation: slide-in-right ease-out 0.7s;
-
-  @include respond(sm) {
-    font-size: 1.75rem;
-  }
 }
 
 .home {
@@ -65,10 +61,6 @@ i {
 
 .header-primary {
   animation: slide-in-left ease-out 0.7s;
-
-  @include respond(sm) {
-    font-size: 2.8rem;
-  }
 }
 
 .hand-emoji {
