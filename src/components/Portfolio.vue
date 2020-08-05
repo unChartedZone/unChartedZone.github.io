@@ -57,10 +57,12 @@ export default {
         {
           title: 'Ice Cream Buisness Management System',
           description: `
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-            pariatur! Dolore, incidunt unde voluptatum quae esse libero laborum
-            laudantium, ratione quo cupiditate tenetur voluptatem nam vel,
-            inventore sit nihil recusandae.
+            This buisness management website was created as part of a school
+            project. It was first built with Bootstrap, PHP, and MySQL, it
+            featured crud operations on various tables and custom validation.
+            It was hosted on a DigitalOcean droplet using Nginx as it's web
+            server. Recently I converted it over to be a React app using
+            firebase as it's backend and hosted on Netlify.
           `,
           imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
           siteLink: 'https://icecream.chrisvaldez.dev',
