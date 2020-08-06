@@ -3,6 +3,10 @@
     <div class="nav__main container mx-auto d-flex align-center">
       <div class="nav-item nav-logo">CV</div>
 
+      <div class="nav__toggle">
+        &nbsp;
+      </div>
+
       <div class="nav-item nav-links">
         <div class="nav-link" @click="scrollJumper({ id: 'about' })">
           <a>About Me</a>
@@ -40,6 +44,11 @@ export default {
 
   &__main {
     justify-content: space-between;
+    padding: 0 2rem;
+
+    @include respond(xl) {
+      padding: 0;
+    }
   }
 
   &-logo {
@@ -53,6 +62,44 @@ export default {
     // @include respond(sm) {
     //   padding: 0 2.25rem;
     // }
+  }
+
+  &__toggle {
+    background-color: black;
+    position: relative;
+    height: 3px;
+    width: 3rem;
+    display: inline-block;
+
+    @include respond(sm) {
+      display: none;
+    }
+
+    &::before,
+    &:after {
+      background-color: black;
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+
+    &:before {
+      top: -1rem;
+    }
+
+    &:after {
+      top: 1rem;
+    }
+  }
+
+  &-links {
+    display: none;
+
+    @include respond(sm) {
+      display: inline;
+    }
   }
 
   &-link {

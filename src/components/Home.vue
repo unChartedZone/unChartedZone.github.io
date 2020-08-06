@@ -9,7 +9,7 @@
     <h2 class="subtitle">California Based Developer</h2>
     <a class="home-btn btn-primary my-1" @click="scrollJumper({ id: 'about' })">
       About Me
-      <i class="fas fa-chevron-down"></i>
+      <!-- <i class="fas fa-chevron-down"></i> -->
     </a>
   </section>
 </template>
@@ -34,6 +34,10 @@ i {
   padding: 0 0.5rem;
 }
 
+.header-primary {
+  animation: slide-in-left ease-out 0.7s;
+}
+
 .subtitle {
   animation: slide-in-right ease-out 0.7s;
 }
@@ -41,6 +45,11 @@ i {
 .home {
   &-page {
     height: 100vh;
+    padding: 0 2rem;
+
+    @include respond(sm) {
+      padding: 0 0;
+    }
   }
 
   &-btn {
@@ -57,10 +66,6 @@ i {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-.header-primary {
-  animation: slide-in-left ease-out 0.7s;
 }
 
 .hand-emoji {

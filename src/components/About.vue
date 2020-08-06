@@ -33,11 +33,14 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  margin: 0 auto 20rem;
+  margin: 0;
+  padding: 0 2rem;
+  @include respond(sm) {
+    padding: 0;
+    margin: 0 auto 20rem;
+  }
 
   &-text {
-    width: 45%;
-
     p:not(:last-child) {
       margin: 0 0 2rem 0;
     }

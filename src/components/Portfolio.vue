@@ -109,11 +109,20 @@ export default {
 
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    @include respond(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__image {
     padding: 0 2rem;
+    margin: 0 0 2rem;
+
+    @include respond(lg) {
+      margin: 0;
+    }
 
     img {
       border-radius: 7px;
@@ -133,6 +142,11 @@ export default {
 
   &__copy {
     line-height: 1.7;
+    margin: 0 0 2rem;
+
+    @include respond(lg) {
+      margin: 0;
+    }
   }
 }
 </style>
