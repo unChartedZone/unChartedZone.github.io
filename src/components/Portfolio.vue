@@ -68,16 +68,24 @@ export default {
           siteLink: 'https://icecream.chrisvaldez.dev',
           githubLink: 'https://github.com/unChartedZone/IceCreamIMS',
         },
+        {
+          title: 'Todo App',
+          description: `
+             This Todo App features the ability to create collections of todos.
+             Within each collection, a user can create, delete, and edit todos.
+             This App also features user authentication using Firebase  and form
+             validation using Vee Validate.
+          `,
+          imgSrc: require('@/assets/images/todosScreenshot.png'),
+          siteLink: 'https://todos.chrisvaldez.dev',
+          githubLink: 'https://github.com/unChartedZone/todo-app',
+        },
         // {
         //   title: 'Weather App',
         //   description: '',
         //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
         // },
         // {
-        //   title: 'Todo App',
-        //   description: '',
-        //   imgSrc: require('@/assets/images/iceCreamScreenshot.png'),
-        // },
       ],
     }
   },
