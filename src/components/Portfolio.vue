@@ -55,6 +55,16 @@ export default {
             'https://github.com/unChartedZone/unChartedZone.github.io',
         },
         {
+          title: 'Coffee Tracker',
+          description: `
+            This simple coffee tracker app utilizes the Yelp API to fetch
+            places based on a given location.
+          `,
+          imgSrc: require('@/assets/images/portfolioScreenshot.png'),
+          siteLink: 'https://coffee.chrisvaldez.dev',
+          githubLink: '',
+        },
+        {
           title: 'Ice Cream Buisness Management System',
           description: `
             This buisness management website was created as part of a school
@@ -71,10 +81,10 @@ export default {
         {
           title: 'Todo App',
           description: `
-             This Todo App features the ability to create collections of todos.
-             Within each collection, a user can create, delete, and edit todos.
-             This App also features user authentication using Firebase  and form
-             validation using Vee Validate.
+            This Todo App features the ability to create collections of todos.
+            Within each collection, a user can create, delete, and edit todos.
+            This App also features user authentication using Firebase  and form
+            validation using Vee Validate.
           `,
           imgSrc: require('@/assets/images/todosScreenshot.png'),
           siteLink: 'https://todos.chrisvaldez.dev',
