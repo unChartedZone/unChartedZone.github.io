@@ -57,12 +57,14 @@ export default {
         {
           title: 'Coffee Tracker',
           description: `
-            This simple coffee tracker app utilizes the Yelp API to fetch
-            places based on a given location.
+            A Coffee Tracker app made with React that utilizes the Yelp API
+            to fetch coffee places based on a given location. The user can
+            see their rating, and address to the restaurant/cafe. It utilizes
+            Netlify serverless functions in order to talk to the Yelp API.
           `,
-          imgSrc: require('@/assets/images/portfolioScreenshot.png'),
+          imgSrc: require('@/assets/images/coffeeScreenshot.png'),
           siteLink: 'https://coffee.chrisvaldez.dev',
-          githubLink: '',
+          githubLink: 'https://github.com/unChartedZone/coffee-tracker',
         },
         {
           title: 'Ice Cream Buisness Management System',
