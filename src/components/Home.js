@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const Home = ({ scrollJumper }) => {
   return (
     <section className="home-page container mx-auto d-flex align-start justify-center col">
       <h1 className="header-primary">
@@ -16,7 +16,12 @@ const Home = () => {
         I'm <span className="name">Christian Valdez</span>
       </h1>
       <h2 className="subtitle">California Based Developer</h2>
-      <button className="home-btn btn-primary my-1">About Me</button>
+      <button
+        onClick={() => scrollJumper('about')}
+        className="home-btn btn-primary my-1"
+      >
+        About Me
+      </button>
     </section>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPaperPlane, FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -54,7 +55,7 @@ const projects = [
   },
 ];
 
-const Project = ({ title, description, image }) => (
+const Project = ({ title, description, image, siteLink, githubLink }) => (
   <div className="portfolio__item">
     <div className="portfolio__header">
       <h1>
@@ -68,6 +69,21 @@ const Project = ({ title, description, image }) => (
       <div className="portfolio__body">
         <p className="portfolio__copy">{description}</p>
         <div>
+          <a className="portfolio__link mr-1" href={siteLink}>
+            <span>
+              <FaPaperPlane />
+              Visit
+            </span>
+          </a>
+          <a
+            className="portfolio__link portfolio__link--outlined"
+            href={githubLink}
+          >
+            <span>
+              <FaGithub />
+              Source
+            </span>
+          </a>
           {/* <z-link className="mr-1" :url="project.siteLink">
                 <i className="fas fa-paper-plane"></i>
                 Visit
@@ -95,6 +111,8 @@ const Portfolio = ({ images }) => {
                 title={project.title}
                 description={project.description}
                 image={images[project.image].url}
+                siteLink={project.siteLink}
+                githubLink={project.githubLink}
               />
             );
           })}

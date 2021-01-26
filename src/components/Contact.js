@@ -12,18 +12,30 @@ const Contact = () => (
         </a>
 
         <div className="contact-links my-1 d-flex justify-center">
-          <a href="https://github.com/unChartedZone" className="btn-fab mr-1">
+          <a
+            href="https://github.com/unChartedZone"
+            className="btn-fab mr-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/christianbvaldez/"
             className="btn-fab mr-1"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn />
           </a>
 
-          <a href="https://twitter.com/unchartedzones" className="btn-fab">
+          <a
+            href="https://twitter.com/unchartedzones"
+            className="btn-fab"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaTwitter />
           </a>
         </div>

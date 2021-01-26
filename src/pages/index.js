@@ -8,9 +8,12 @@ import Contact from '../components/Contact';
 import Portfolio from '../components/Portfolio';
 
 const IndexPage = ({ data }) => {
-  // const images = data.allFile.edges.map(({ node }) => {
-  //   return node.publicURL;
-  // });
+  //
+  const scrollJumper = id => {
+    let offset = 90; // Size of navbar + 20 pixels for a little padding
+    let section = document.getElementById(id);
+    window.scrollTo(0, section.offsetTop - offset);
+  };
 
   const images = {};
 
@@ -23,8 +26,8 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <Nav />
-      <Home />
+      <Nav scrollJumper={scrollJumper} />
+      <Home scrollJumper={scrollJumper} />
       <About />
       <Portfolio images={images} />
       <Contact />
