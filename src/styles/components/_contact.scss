@@ -1,0 +1,58 @@
+.contact {
+  position: relative;
+
+  &-body {
+    text-align: center;
+  }
+}
+
+.paragraph {
+  @include respond(sm) {
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.email {
+  &,
+  &:link,
+  &:visited {
+    color: $color-primary;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0.8rem 0.8rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: #ffffff;
+    transform: skewY(-5deg);
+  }
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+
+  & > * {
+    padding: 0.2rem 0;
+  }
+
+  &-header {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &-subheader {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  &-copyright {
+    font-size: 1.5rem;
+  }
+}

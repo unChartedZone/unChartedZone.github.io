@@ -1,0 +1,46 @@
+i {
+  padding: 0 0.5rem;
+}
+
+.header-primary {
+  animation: slide-in-left ease-out 0.7s;
+}
+
+.subtitle {
+  animation: slide-in-right ease-out 0.7s;
+}
+
+.home {
+  &-page {
+    height: 100vh;
+    padding: 0 2rem;
+
+    @include respond(sm) {
+      padding: 0 0;
+    }
+  }
+
+  &-btn {
+    animation: slide-in-up ease-out 0.7s;
+  }
+}
+
+.name {
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-light
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hand-emoji {
+  display: inline-block;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: rotate(75deg);
+  }
+}

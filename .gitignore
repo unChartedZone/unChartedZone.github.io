@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+*.log
 
 # local env files
 .env.local
@@ -20,3 +20,7 @@ yarn-error.log*
 *.sln
 *.sw?
 *.swp
+
+# gatsby files
+.cache/
+public
