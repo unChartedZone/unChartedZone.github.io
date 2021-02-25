@@ -1,12 +1,16 @@
-// Abstract
+// Abstract Styles
 @import './abstracts/mixins';
 @import './abstracts/variables';
 
+// Base Styles
 @import './base/base';
 @import './base/animations';
 @import './base/typography';
 
-// Components
+// Page Styles
+@import './pages/404';
+
+// Component Styles
 @import './components/button';
 @import './components/nav';
 @import './components/home';

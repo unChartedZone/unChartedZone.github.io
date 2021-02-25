@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Nav from '../components/Nav';
+// import Nav from '../components/Nav';
 import Home from '../components/Home';
 import About from '../components/About';
 import Contact from '../components/Contact';
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <>
-      <Nav scrollJumper={scrollJumper} />
+      {/* <Nav scrollJumper={scrollJumper} /> */}
       <Home scrollJumper={scrollJumper} />
       <About />
       <Portfolio images={images} />

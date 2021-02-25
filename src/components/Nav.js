@@ -22,14 +22,14 @@ const Nav = ({ scrollJumper }) => {
         <ul
           className={`nav-item nav-links ${navToggle ? 'nav-links--show' : ''}`}
         >
-          <li className="nav-link" onClick={() => scrollJumper('about')}>
-            <a>About Me</a>
+          <li className="nav-link">
+            <button onClick={() => scrollJumper('about')}>About Me</button>
           </li>
-          <li className="nav-link" onClick={() => scrollJumper('portfolio')}>
-            <a>Portfolio</a>
+          <li className="nav-link">
+            <button onClick={() => scrollJumper('portfolio')}>Portfolio</button>
           </li>
-          <li className="nav-link" onClick={() => scrollJumper('contact')}>
-            <a>Contact</a>
+          <li className="nav-link">
+            <button onClick={() => scrollJumper('contact')}>Contact</button>
           </li>
         </ul>
       </div>

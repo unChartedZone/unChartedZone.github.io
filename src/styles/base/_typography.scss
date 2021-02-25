@@ -1,13 +1,14 @@
 @font-face {
   font-family: Google Sans;
   // src: url("./GoogleSans-Regular.ttf");
-  src: url("../assets/fonts/GoogleSans-Regular.ttf");
+  src: url('../assets/fonts/GoogleSans-Regular.ttf');
 }
 
 .header {
   &-primary {
-    font-family: "Google Sans", sans-serif;
+    font-family: 'Google Sans', sans-serif;
     letter-spacing: 0.1rem;
+    text-rendering: optimizeLegibility;
 
     font-size: 3rem;
 
