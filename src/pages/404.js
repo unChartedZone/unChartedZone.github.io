@@ -2,8 +2,10 @@ import React from 'react';
 
 const NotFoundPage = () => (
   <>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="not-found">
+      <h1>404: Not Found</h1>
+      <p>This isn't the page you're looking for!</p>
+    </div>
   </>
 );
 
