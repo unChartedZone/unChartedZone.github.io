@@ -10,7 +10,15 @@
     letter-spacing: 0.1rem;
     text-rendering: optimizeLegibility;
 
-    font-size: 3rem;
+    font-size: 3.5rem;
+
+    @include respond(sm) {
+      font-size: 4.75rem;
+    }
+
+    @include respond(md) {
+      font-size: 6rem;
+    }
 
     @include respond(xl) {
       font-size: 6.5rem;
