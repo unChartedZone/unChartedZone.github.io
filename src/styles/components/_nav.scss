@@ -8,81 +8,149 @@
   z-index: 10;
 
   &__main {
+    display: flex;
     justify-content: space-between;
-    // padding: 0 1rem;
+    padding: 0 2rem;
 
     @include respond(xl) {
       padding: 0;
     }
   }
 
-  &-logo {
+  &__logo {
     font-family: 'Google Sans';
     font-size: 3rem;
+    font-weight: 400;
   }
 
-  &-item {
-    // @include respond(sm) {
-    //   padding: 0 2.25rem;
-    // }
-  }
-
-  &__toggle {
-    background-color: black;
-    position: relative;
-    height: 3px;
-    width: 3rem;
-    display: inline-block;
-
-    @include respond(sm) {
-      display: none;
-    }
-
-    &::before,
-    &:after {
-      background-color: black;
-      content: '';
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      left: 0;
-    }
-
-    &:before {
-      top: -1rem;
-    }
-
-    &:after {
-      top: 1rem;
-    }
-  }
-
-  &-links {
-    display: none;
+  &__list {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
 
     @include respond(sm) {
       display: inline;
+      height: 100%;
+      position: relative;
+    }
+
+    &--show {
+      transform: translateX(0);
     }
   }
 
-  &-link {
+  &__link {
     display: inline-block;
-    font-size: 1.65rem;
-    font-family: $primary-default-font;
     padding: 0 1rem;
     user-select: none;
 
-    a {
+    button {
+      font-size: 1.65rem;
+      font-family: $primary-default-font;
       display: inline-block;
+      border: none;
+      background: transparent;
       cursor: pointer;
       color: black;
       text-decoration: none;
       transition: all 0.2s;
+      outline: none;
 
       &:hover {
         color: $color-primary;
         transform: translateY(-0.2rem) scale(1.02);
       }
     }
+
+    &--1 {
+      animation: pop-in 0.8s ease-out;
+    }
+
+    &--2 {
+      animation: pop-in 1s ease-out;
+    }
+
+    &--3 {
+      animation: pop-in 1.2s ease-out;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+    @include respond(sm) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    &,
+    &::before,
+    &::after {
+      top: 50%;
+      left: 50%;
+      background-color: black;
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) translateY(10px);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    &--checked {
+      & {
+        background-color: transparent;
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) translateY(0px) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) translateY(0px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    //opacity: 0;
+    transform: translateY(20px);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

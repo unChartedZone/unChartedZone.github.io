@@ -1,15 +1,24 @@
 @font-face {
   font-family: Google Sans;
   // src: url("./GoogleSans-Regular.ttf");
-  src: url("../assets/fonts/GoogleSans-Regular.ttf");
+  src: url('../assets/fonts/GoogleSans-Regular.ttf');
 }
 
 .header {
   &-primary {
-    font-family: "Google Sans", sans-serif;
+    font-family: 'Google Sans', sans-serif;
     letter-spacing: 0.1rem;
+    text-rendering: optimizeLegibility;
 
-    font-size: 3rem;
+    font-size: 3.5rem;
+
+    @include respond(sm) {
+      font-size: 4.75rem;
+    }
+
+    @include respond(md) {
+      font-size: 6rem;
+    }
 
     @include respond(xl) {
       font-size: 6.5rem;

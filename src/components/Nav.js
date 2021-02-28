@@ -1,25 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { scrollJumper } from '../helpers';
 
-const Nav = ({ scrollJumper }) => (
-  <nav className="nav d-flex align-center w-full">
-    <div className="nav__main container mx-auto d-flex align-center">
-      <div className="nav-item nav-logo">CV</div>
+const Nav = () => {
+  let [navToggle, setNavToggle] = useState(false);
 
-      <div className="nav__toggle">&nbsp;</div>
+  const toggleNavMenu = () => {
+    setNavToggle(!navToggle);
+  };
 
-      <ul className="nav-item nav-links">
-        <li className="nav-link" onClick={() => scrollJumper('about')}>
-          <a>About Me</a>
-        </li>
-        <li className="nav-link" onClick={() => scrollJumper('portfolio')}>
-          <a>Portfolio</a>
-        </li>
-        <li className="nav-link" onClick={() => scrollJumper('contact')}>
-          <a>Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-);
+  return (
+    <nav className="nav d-flex align-center w-full">
+      <div className="nav__main container mx-auto align-center">
+        <div className="nav__section">
+          <h1 className="nav__logo">CV</h1>
+        </div>
+        <div className="nav__section">
+          <ul className={`nav__list ${navToggle ? 'nav__list--show' : ''}`}>
+            <li className={`nav__link ${navToggle ? 'nav__link--1' : ''}`}>
+              <button
+                onClick={() => {
+                  setNavToggle(false);
+                  scrollJumper('about');
+                }}
+              >
+                About Me
+              </button>
+            </li>
+            <li className={`nav__link ${navToggle ? 'nav__link--2' : ''}`}>
+              <button
+                onClick={() => {
+                  setNavToggle(false);
+                  scrollJumper('portfolio');
+                }}
+              >
+                Portfolio
+              </button>
+            </li>
+            <li className={`nav__link ${navToggle ? 'nav__link--3' : ''}`}>
+              <button
+                onClick={() => {
+                  setNavToggle(false);
+                  scrollJumper('contact');
+                }}
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+
+          <div role="button" className="nav__toggle" onClick={toggleNavMenu}>
+            <span
+              className={`nav__burger ${
+                navToggle ? 'nav__burger--checked' : ''
+              }`}
+            >
+              &nbsp;
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default Nav;

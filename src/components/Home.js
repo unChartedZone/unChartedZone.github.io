@@ -1,6 +1,7 @@
 import React from 'react';
+import { scrollJumper } from '../helpers';
 
-const Home = ({ scrollJumper }) => {
+const Home = () => {
   return (
     <section className="home-page container mx-auto d-flex align-start justify-center col">
       <h1 className="header-primary">
