@@ -55,6 +55,10 @@
     user-select: none;
     margin: 0 0 2rem 0;
 
+    @include respond(sm) {
+      margin: 0;
+    }
+
     button {
       font-size: 1.65rem;
       font-family: $primary-default-font;
