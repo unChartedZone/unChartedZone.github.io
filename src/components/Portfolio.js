@@ -5,11 +5,13 @@ const projects = [
   {
     title: 'My Portfolio!',
     description: `
-            This very website you're on right now! I made this website with
-            VueJS and have it hosted on Github Pages. Orginally my portfolio
-            was built with only with vanilla HTML and CSS but over time it
-            became hard to manage and update, with Vue I can easily swap out
-            components and keep my portfolio up to date.
+            This very website you're on right now! Oringinally I built it
+            with just html, css, and some js, but later I converted it over
+            to a VueJS project. However I wanted to benefit from SEO and be
+            able to still quickly modify components of my Portfolio, so I
+            decided to convert it to a Gatsby site instead. I also setup a
+            Github Action that builds and deploys my portfolio when I push
+            changes to my main branch.
           `,
     image: 'portfolioScreenshot',
     siteLink: 'https://chrisvaldez.dev',
@@ -19,9 +21,10 @@ const projects = [
     title: 'Coffee Tracker',
     description: `
             A Coffee Tracker app made with React that utilizes the Yelp API
-            to fetch coffee places based on a given location. The user can
-            see their rating, and address to the restaurant/cafe. It utilizes
-            Netlify serverless functions in order to talk to the Yelp API.
+            to fetch coffee places based on a given location and help you
+            find the best coffe shop near you. The user can see their rating,
+            and address to the restaurant/cafe. It utilizes Netlify
+            serverless functions in order to talk to the Yelp API.
           `,
     image: 'coffeeScreenshot',
     siteLink: 'https://coffee.chrisvaldez.dev',
@@ -84,14 +87,6 @@ const Project = ({ title, description, image, siteLink, githubLink }) => (
               Source
             </span>
           </a>
-          {/* <z-link className="mr-1" :url="project.siteLink">
-                <i className="fas fa-paper-plane"></i>
-                Visit
-              </z-link> */}
-          {/* <z-link :url="project.githubLink" outlined>
-                <i className="fab fa-github"></i>
-                Source
-              </z-link> */}
         </div>
       </div>
     </div>
