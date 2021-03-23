@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section className="home-page container mx-auto d-flex align-start justify-center col">
       <h1 className="header-primary">
-        Hello{' '}
+        <span>Hello</span>
         <span
           className="hand-emoji"
           role="img"
@@ -13,7 +13,9 @@ const Home = () => {
         >
           👋
         </span>
-        ,<br />
+        ,
+      </h1>
+      <h1 className="header-primary">
         I'm <span className="name">Christian Valdez</span>
       </h1>
       <h2 className="subtitle">California Based Developer</h2>

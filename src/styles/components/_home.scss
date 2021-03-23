@@ -34,11 +34,13 @@ i {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-weight: 600;
 }
 
 .hand-emoji {
   display: inline-block;
   transition: all 0.4s;
+  margin-left: 0.75rem;
 
   &:hover {
     transform: rotate(75deg);
