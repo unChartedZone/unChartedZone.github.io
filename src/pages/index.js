@@ -10,10 +10,10 @@ import Portfolio from '../components/Portfolio';
 const IndexPage = ({ data }) => {
   const images = {};
 
-  data.allFile.edges.forEach(({ node }) => {
+  data.images.edges.forEach(({ node }) => {
     images[node.name] = {
       name: node.name,
-      url: node.publicURL,
+      fluid: node.childImageSharp.fluid,
     };
   });
 
@@ -30,11 +30,19 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query ProjectImageQuery {
-    allFile(filter: { extension: { eq: "png" } }) {
+    images: allFile(filter: { extension: { eq: "png" } }) {
       edges {
         node {
           name
-          publicURL
+          childImageSharp {
+            fluid {
+              base64
+              aspectRatio
+              src
+              srcSet
+              sizes
+            }
+          }
         }
       }
     }

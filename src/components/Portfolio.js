@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import { FaPaperPlane, FaGithub } from 'react-icons/fa';
 
 const projects = [
@@ -31,7 +32,7 @@ const projects = [
     githubLink: 'https://github.com/unChartedZone/coffee-tracker',
   },
   {
-    title: 'Ice Cream Buisness Management System',
+    title: 'Ice Cream BMS',
     description: `
             This buisness management website was created as part of a school
             project. It was first built with Bootstrap, PHP, and MySQL, it
@@ -58,7 +59,7 @@ const projects = [
   },
 ];
 
-const Project = ({ title, description, image, siteLink, githubLink }) => (
+const Project = ({ title, description, siteLink, githubLink, fluid }) => (
   <div className="portfolio__item">
     <div className="portfolio__header">
       <h1>
@@ -67,7 +68,7 @@ const Project = ({ title, description, image, siteLink, githubLink }) => (
     </div>
     <div className="portfolio__content">
       <div className="portfolio__image">
-        <img src={image} alt="" />
+        <Img fluid={fluid} />
       </div>
       <div className="portfolio__body">
         <p className="portfolio__copy">{description}</p>
@@ -105,9 +106,9 @@ const Portfolio = ({ images }) => {
                 key={index}
                 title={project.title}
                 description={project.description}
-                image={images[project.image].url}
                 siteLink={project.siteLink}
                 githubLink={project.githubLink}
+                fluid={images[project.image].fluid}
               />
             );
           })}
