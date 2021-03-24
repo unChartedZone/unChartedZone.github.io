@@ -48,7 +48,13 @@ const Nav = () => {
             </li>
           </ul>
 
-          <div role="button" className="nav__toggle" onClick={toggleNavMenu}>
+          <div
+            role="button"
+            className="nav__toggle"
+            onClick={toggleNavMenu}
+            onKeyDown={toggleNavMenu}
+            tabIndex="0"
+          >
             <span
               className={`nav__burger ${
                 navToggle ? 'nav__burger--checked' : ''
