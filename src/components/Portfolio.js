@@ -4,15 +4,26 @@ import { FaPaperPlane, FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
+    title: 'Twitter Clone',
+    description: `
+          A feature rich twitter clone built with Vue.js on the frontend and
+          Ruby on Rails for the backend. It has the ability to sign up and login
+          users, tweet posting, follow and unfollowing of users, likes,
+          retweets, and profile editing.
+    `,
+    image: 'twitterCloneScreenshot',
+    siteLink: 'https://twitter.chrisvaldez.dev',
+    githubLink: 'https://github.com/unChartedZone/twitter-clone',
+  },
+  {
     title: 'My Portfolio!',
     description: `
-            This very website you're on right now! Oringinally I built it
-            with just html, css, and some js, but later I converted it over
-            to a VueJS project. However I wanted to benefit from SEO and be
-            able to still quickly modify components of my Portfolio, so I
-            decided to convert it to a Gatsby site instead. I also setup a
-            Github Action that builds and deploys my portfolio when I push
-            changes to my main branch.
+            This very website you're on right now! Oringinally I built it with
+            just HTML, CSS, and some Javascript, but later I converted it over
+            to a Vue.js project. However I wanted to benefit from SEO and have
+            faster static rendering, so I decided to convert it to a Gatsby site
+            instead. I also setup a Github Action that builds and deploys my
+            portfolio when I push changes to my main branch.
           `,
     image: 'portfolioScreenshot',
     siteLink: 'https://chrisvaldez.dev',
@@ -73,7 +84,7 @@ const Project = ({ title, description, siteLink, githubLink, fluid }) => (
       <div className="portfolio__body">
         <p className="portfolio__copy">{description}</p>
         <div>
-          <a className="portfolio__link mr-1" href={siteLink}>
+          <a className="portfolio__link mr-1" href={siteLink} target="_blank">
             <span>
               <FaPaperPlane />
               Visit
@@ -82,6 +93,7 @@ const Project = ({ title, description, siteLink, githubLink, fluid }) => (
           <a
             className="portfolio__link portfolio__link--outlined"
             href={githubLink}
+            target="_blank"
           >
             <span>
               <FaGithub />
