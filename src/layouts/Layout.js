@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Chris Valdez - Full Stack Developer</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Helmet>
       <main>
         <Nav />
