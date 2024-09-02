@@ -1,0 +1,51 @@
+@use "sass:color";
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 3rem;
+  font-size: 1.6rem;
+  margin: 0 0 3rem;
+
+  &__time {
+    white-space: nowrap;
+    color: $color-primary;
+    text-align: end;
+    padding-top: 0.5rem;
+  }
+
+  &__title {
+    color: $color-primary;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__description-list {
+    // list-style: circle;
+    margin: 0.75rem 0 0;
+    padding: 0 0 0 1rem;
+    // list-style-position: inside;
+
+    li {
+      color: $color-primary;
+
+      span {
+        color: black;
+      }
+    }
+  }
+
+  &__skill-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0.75rem 0 0;
+  }
+
+  &__skill {
+    border-radius: 20px;
+    color: $color-primary;
+    background-color: rgba($color-primary, 0.1);
+    padding: 0.25rem 0.8rem;
+  }
+}
