@@ -64,7 +64,6 @@ const Nav = () => {
             className="nav__toggle"
             onClick={toggleNavMenu}
             onKeyDown={toggleNavMenu}
-            tabIndex="0"
           >
             <span
               className={`nav__burger ${
