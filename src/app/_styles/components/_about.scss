@@ -6,7 +6,11 @@
     margin: 0 auto 20rem;
   }
 
-  &-text {
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
     p:not(:last-child) {
       margin: 0 0 2rem 0;
     }

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
     <section id="about" className="about container">
-      <h1 className="header-secondary mb-1">About Me</h1>
-      <div className="about-text">
+      <h1 className="about__title header-secondary mb-1">About Me</h1>
+      <div className="about__text mx-auto">
         <p className="paragraph">
           Back in 2011, I decided to enroll in my high school's introductory
           computer science class. Fast-forward to today, and I've had the

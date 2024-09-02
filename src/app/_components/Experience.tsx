@@ -83,7 +83,7 @@ const Experience = () => {
             <div className="experience__content">
               <h1 className="experience__title">
                 <span>{ex.position}</span>
-                <span>·</span>
+                <span className="middot">·</span>
                 <span>{ex.name}</span>
               </h1>
               <ul className="experience__description-list">
