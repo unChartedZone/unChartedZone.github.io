@@ -1,5 +1,6 @@
-import React from 'react';
-import { scrollJumper } from '../helpers';
+"use client";
+import React from "react";
+import { scrollJumper } from "../../helpers";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       </h1>
       <h2 className="subtitle">Full Stack Developer</h2>
       <button
-        onClick={() => scrollJumper('about')}
+        onClick={() => scrollJumper("about")}
         className="home-btn btn-primary my-1"
       >
         About Me

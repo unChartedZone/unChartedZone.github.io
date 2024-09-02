@@ -1,6 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const Link = ({ url }) => {
+interface LinkProps {
+  url: string;
+}
+
+const Link: React.FC<LinkProps> = ({ url }) => {
   return (
     <a
       href={url}

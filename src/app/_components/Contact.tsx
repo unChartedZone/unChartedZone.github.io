@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import React from "react";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   const year = new Date().getFullYear();
@@ -32,20 +32,10 @@ const Contact = () => {
             >
               <FaLinkedinIn />
             </a>
-
-            <a
-              href="https://twitter.com/unchartedzones"
-              className="btn-fab"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
           </div>
         </div>
       </div>
       <div className="footer">
-        {/* <h1 className="footer-header">Christian Valdez</h1> */}
         <h1 className="footer-header mt-1">CV</h1>
         <h2 className="footer-subheader">Full Stack Developer</h2>
         <p className="footer-copyright mb-4">Copyright &copy; {year}, CV</p>

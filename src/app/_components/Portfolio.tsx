@@ -1,22 +1,27 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import { FaPaperPlane, FaGithub } from 'react-icons/fa';
+import React from "react";
+import Image from "next/image";
+import { FaPaperPlane, FaGithub } from "react-icons/fa";
+import twitterCloneScreenshot from "/public/images/twitterCloneScreenshot.png";
+import portfolioScreenshot from "/public/images/portfolioScreenshot.png";
+import coffeeTrackerScreenshot from "/public/images/coffeeScreenshot.png";
+import iceCreamScreenshot from "/public/images/iceCreamScreenshot.png";
+import todosScreenshot from "/public/images/todosScreenshot.png";
 
 const projects = [
   {
-    title: 'Twitter Clone',
+    title: "Twitter Clone",
     description: `
           A feature rich twitter clone built with Vue.js on the frontend and
           Ruby on Rails for the backend. It has the ability to sign up and login
           users, tweet posting, follow and unfollowing of users, likes,
           retweets, and profile editing.
     `,
-    image: 'twitterCloneScreenshot',
-    siteLink: 'https://twitter.chrisvaldez.dev',
-    githubLink: 'https://github.com/unChartedZone/twitter-clone',
+    image: twitterCloneScreenshot,
+    siteLink: "https://twitter.chrisvaldez.dev",
+    githubLink: "https://github.com/unChartedZone/twitter-clone",
   },
   {
-    title: 'My Portfolio!',
+    title: "My Portfolio!",
     description: `
             This very website you're on right now! Oringinally I built it with
             just HTML, CSS, and some Javascript, but later I converted it over
@@ -25,12 +30,12 @@ const projects = [
             instead. I also setup a Github Action that builds and deploys my
             portfolio when I push changes to my main branch.
           `,
-    image: 'portfolioScreenshot',
-    siteLink: 'https://chrisvaldez.dev',
-    githubLink: 'https://github.com/unChartedZone/unChartedZone.github.io',
+    image: portfolioScreenshot,
+    siteLink: "https://chrisvaldez.dev",
+    githubLink: "https://github.com/unChartedZone/unChartedZone.github.io",
   },
   {
-    title: 'Coffee Tracker',
+    title: "Coffee Tracker",
     description: `
             A Coffee Tracker app made with React that utilizes the Yelp API
             to fetch coffee places based on a given location and help you
@@ -38,12 +43,12 @@ const projects = [
             and address to the restaurant/cafe. It utilizes Netlify
             serverless functions in order to talk to the Yelp API.
           `,
-    image: 'coffeeScreenshot',
-    siteLink: 'https://coffee.chrisvaldez.dev',
-    githubLink: 'https://github.com/unChartedZone/coffee-tracker',
+    image: coffeeTrackerScreenshot,
+    siteLink: "https://coffee.chrisvaldez.dev",
+    githubLink: "https://github.com/unChartedZone/coffee-tracker",
   },
   {
-    title: 'Ice Cream BMS',
+    title: "Ice Cream BMS",
     description: `
             This buisness management website was created as part of a school
             project. It was first built with Bootstrap, PHP, and MySQL, it
@@ -52,25 +57,39 @@ const projects = [
             server. Recently I converted it over to be a React app using
             firebase as it's backend and hosted on Netlify.
           `,
-    image: 'iceCreamScreenshot',
-    siteLink: 'https://icecream.chrisvaldez.dev',
-    githubLink: 'https://github.com/unChartedZone/IceCreamIMS',
+    image: iceCreamScreenshot,
+    siteLink: "https://icecream.chrisvaldez.dev",
+    githubLink: "https://github.com/unChartedZone/IceCreamIMS",
   },
   {
-    title: 'Todo App',
+    title: "Todo App",
     description: `
             This Todo App features the ability to create collections of todos.
             Within each collection, a user can create, delete, and edit todos.
             This App also features user authentication using Firebase  and form
             validation using Vee Validate.
           `,
-    image: 'todosScreenshot',
-    siteLink: 'https://todos.chrisvaldez.dev',
-    githubLink: 'https://github.com/unChartedZone/todo-app',
+    image: todosScreenshot,
+    siteLink: "https://todos.chrisvaldez.dev",
+    githubLink: "https://github.com/unChartedZone/todo-app",
   },
 ];
 
-const Project = ({ title, description, siteLink, githubLink, fluid }) => (
+interface ProjectProps {
+  title: string;
+  description: string;
+  siteLink: string;
+  githubLink: string;
+  image: any;
+}
+
+const Project: React.FC<ProjectProps> = ({
+  title,
+  description,
+  siteLink,
+  githubLink,
+  image,
+}) => (
   <div className="portfolio__item">
     <div className="portfolio__header">
       <h1>
@@ -79,7 +98,8 @@ const Project = ({ title, description, siteLink, githubLink, fluid }) => (
     </div>
     <div className="portfolio__content">
       <div className="portfolio__image">
-        <Img fluid={fluid} />
+        {/* <Img fluid={fluid} /> */}
+        <Image src={image} alt="Screenshot of twitter clone app" />
       </div>
       <div className="portfolio__body">
         <p className="portfolio__copy">{description}</p>
@@ -106,7 +126,7 @@ const Project = ({ title, description, siteLink, githubLink, fluid }) => (
   </div>
 );
 
-const Portfolio = ({ images }) => {
+const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio-section my-4">
       <div className="container mx-auto d-flex col justify-center">
@@ -120,7 +140,7 @@ const Portfolio = ({ images }) => {
                 description={project.description}
                 siteLink={project.siteLink}
                 githubLink={project.githubLink}
-                fluid={images[project.image].fluid}
+                image={project.image}
               />
             );
           })}

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { scrollJumper } from '../helpers';
+"use client";
+import React, { useState } from "react";
+import { scrollJumper } from "../../helpers/index";
 
 const Nav = () => {
   let [navToggle, setNavToggle] = useState(false);
@@ -15,32 +16,42 @@ const Nav = () => {
           <h1 className="nav__logo">CV</h1>
         </div>
         <div className="nav__section">
-          <ul className={`nav__list ${navToggle ? 'nav__list--show' : ''}`}>
-            <li className={`nav__link ${navToggle ? 'nav__link--1' : ''}`}>
+          <ul className={`nav__list ${navToggle ? "nav__list--show" : ""}`}>
+            <li className={`nav__link ${navToggle ? "nav__link--1" : ""}`}>
               <button
                 onClick={() => {
                   setNavToggle(false);
-                  scrollJumper('about');
+                  scrollJumper("about");
                 }}
               >
                 About Me
               </button>
             </li>
-            <li className={`nav__link ${navToggle ? 'nav__link--2' : ''}`}>
+            <li className={`nav__link ${navToggle ? "nav__link--2" : ""}`}>
               <button
                 onClick={() => {
                   setNavToggle(false);
-                  scrollJumper('portfolio');
+                  scrollJumper("experience");
+                }}
+              >
+                Experience
+              </button>
+            </li>
+            <li className={`nav__link ${navToggle ? "nav__link--2" : ""}`}>
+              <button
+                onClick={() => {
+                  setNavToggle(false);
+                  scrollJumper("portfolio");
                 }}
               >
                 Portfolio
               </button>
             </li>
-            <li className={`nav__link ${navToggle ? 'nav__link--3' : ''}`}>
+            <li className={`nav__link ${navToggle ? "nav__link--3" : ""}`}>
               <button
                 onClick={() => {
                   setNavToggle(false);
-                  scrollJumper('contact');
+                  scrollJumper("contact");
                 }}
               >
                 Contact
@@ -57,7 +68,7 @@ const Nav = () => {
           >
             <span
               className={`nav__burger ${
-                navToggle ? 'nav__burger--checked' : ''
+                navToggle ? "nav__burger--checked" : ""
               }`}
             >
               &nbsp;
