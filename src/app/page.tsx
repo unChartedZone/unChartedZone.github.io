@@ -1,11 +1,18 @@
-import Image from 'next/image';
+import "./_styles/main.scss";
+import Home from "./_components/Home";
+import About from "./_components/About";
+import Experience from "./_components/Experience";
+import Portfolio from "./_components/Portfolio";
+import Contact from "./_components/Contact";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <div>
-        <h1>Hello</h1>
-      </div>
+      <Home />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
     </main>
   );
 }
