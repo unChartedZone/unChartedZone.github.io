@@ -2,6 +2,18 @@
   &__item {
     margin: 7rem 0;
     width: 100%;
+
+    &:nth-of-type(2n) .portfolio__title {
+      transform: skewY(5deg);
+    }
+
+    &:nth-of-type(2n) .portfolio__content {
+      order: 2;
+    }
+
+    &:nth-of-type(2n) .portfolio__image {
+      order: 1;
+    }
   }
 
   &__header {
@@ -37,7 +49,7 @@
       margin: 0;
     }
 
-    .gatsby-image-wrapper {
+    img {
       border-radius: 7px;
       height: 100%;
       width: 100%;
