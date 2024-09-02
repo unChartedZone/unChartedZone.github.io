@@ -4,5 +4,9 @@ $color-primary-dark: darken($color-primary, 10%);
 
 $color-grey-1: #6b6a6a;
 
-$primary-default-font: 'Montserrat', san-serif;
+$primary-default-font: "Montserrat", san-serif;
 $secondary-default-font: Arial, san-serif;
+
+$shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+$shadow-md: 0px 5px 10px rgba(#000000, 0.2);
+$shadow-lg: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);

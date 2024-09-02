@@ -3,11 +3,11 @@
     margin: 7rem 0;
     width: 100%;
 
-    @include respond(lg) {
-      &:nth-of-type(2n) .portfolio__title {
-        transform: skewY(5deg);
-      }
+    &:nth-of-type(2n) .portfolio__title {
+      transform: skewY(5deg);
+    }
 
+    @include respond(lg) {
       &:nth-of-type(2n) .portfolio__content {
         order: 2;
       }
@@ -26,6 +26,8 @@
   &__title {
     display: inline-block;
     background-color: $color-primary;
+    border-radius: 8px;
+    box-shadow: $shadow;
     color: #ffffff;
     font-size: 2rem;
     font-weight: 400;
@@ -55,7 +57,7 @@
       border-radius: 7px;
       height: 100%;
       width: 100%;
-      box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: $shadow-md;
     }
   }
 
@@ -88,7 +90,7 @@
     cursor: pointer;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow;
 
     span {
       display: flex;

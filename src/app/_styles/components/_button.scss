@@ -16,7 +16,7 @@
     padding: 8px 7px;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow;
 
     @include respond(xl) {
       font-size: 1.75rem;
@@ -36,7 +36,7 @@
 
   &:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 5px 10px rgba(#000000, 0.2);
+    box-shadow: $shadow-md;
   }
 }
 
