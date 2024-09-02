@@ -126,9 +126,9 @@ const Project: React.FC<ProjectProps> = ({
   </div>
 );
 
-const Portfolio = () => {
+const Projects = () => {
   return (
-    <section id="portfolio" className="portfolio-section my-4">
+    <section id="projects" className="portfolio-section my-4">
       <div className="container mx-auto d-flex col justify-center">
         <h2 className="header-secondary text-center">Projects</h2>
         <>
@@ -150,4 +150,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

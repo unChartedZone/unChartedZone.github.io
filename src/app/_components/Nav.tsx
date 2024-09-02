@@ -41,7 +41,7 @@ const Nav = () => {
               <button
                 onClick={() => {
                   setNavToggle(false);
-                  scrollJumper("portfolio");
+                  scrollJumper("projects");
                 }}
               >
                 Projects
