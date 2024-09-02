@@ -26,9 +26,9 @@ const projects = [
             This very website you're on right now! Oringinally I built it with
             just HTML, CSS, and some Javascript, but later I converted it over
             to a Vue.js project. However I wanted to benefit from SEO and have
-            faster static rendering, so I decided to convert it to a Gatsby site
-            instead. I also setup a Github Action that builds and deploys my
-            portfolio when I push changes to my main branch.
+            faster static rendering, so I decided to convert it to a Next.js
+            site instead. I also setup a Github Action that builds and deploys
+            my portfolio when I push changes to my main branch.
           `,
     image: portfolioScreenshot,
     siteLink: "https://chrisvaldez.dev",
@@ -130,7 +130,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio-section my-4">
       <div className="container mx-auto d-flex col justify-center">
-        <h2 className="header-secondary text-center">Portfolio</h2>
+        <h2 className="header-secondary text-center">Projects</h2>
         <>
           {projects.map((project, index) => {
             return (

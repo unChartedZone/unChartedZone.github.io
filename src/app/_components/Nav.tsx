@@ -44,7 +44,7 @@ const Nav = () => {
                   scrollJumper("portfolio");
                 }}
               >
-                Portfolio
+                Projects
               </button>
             </li>
             <li className={`nav__link ${navToggle ? "nav__link--3" : ""}`}>
