@@ -19,7 +19,7 @@ const Home = () => {
       <h1 className="header-primary">
         I'm <span className="name">Christian Valdez</span>
       </h1>
-      <h2 className="subtitle">Full Stack Developer</h2>
+      <h2 className="subtitle">Software Engineer</h2>
       <button
         onClick={() => scrollJumper("about")}
         className="home-btn btn-primary my-1"

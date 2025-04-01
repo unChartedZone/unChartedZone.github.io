@@ -1,4 +1,4 @@
-import React, { experimental_taintObjectReference } from "react";
+import React from "react";
 
 const Experience = () => {
   interface ExperienceItem {
@@ -17,35 +17,31 @@ const Experience = () => {
       name: "Chatmeter",
       position: "Software Engineer II",
       time: {
-        from: "May 2019",
-        to: "Present",
+        from: "May 2021",
+        to: "August 2024",
       },
       description: [
-        `Assumed ownership of image editor to crop images to specifications
-        using the Canvas API, improved user experience by reducing image
-        failures among providers such as Google`,
-        `Improved a social media post editor to make posts to different social
-        media providers using React and the Scala/Play framework, reduced post
-        failures by 80% `,
-        `Integrated SurveyJS as a custom survey creator into the dashboard and
-        customized it for different use cases`,
-        `Developed an in-house solution for directory location pages with Astro
-        that reduced operation costs by 80%`,
+        'Led project to overhaul the survey creator tool, including integrating generative AI prompt to generate a survey, increasing user engagement by 30\%.',
+        'Led image optimizer project and reduced image upload failures among providers such as Google \& Yelp by 60\%.',
+        'Reduced post failures by 80\% by overhauling social media post publisher tool to create a more engaging and user-friendly experience.',
+        'Optimized the post-queuing system to improve reliability and efficiency when publishing to multiple social media platforms, leveraging Scala and the Play framework.',
+        'Reduced operation costs by 75\% by developing an in-house solution for directory location pages with Astro.',
+        'Migrated legacy AngularJS pages to functional React components, leveraging TypeScript for improved type safety, maintainability, and scalability.',
+        'Led Agile stand-up meetings, facilitated team collaboration, and addressed blockers to ensure timely delivery of SaaS products.',
       ],
-      skills: ["React", "Scala", "Play", "Bootstrap", "MongoDB", "AWS"],
+      skills: ["React", "Scala", "Play", "Bootstrap", "SCSS", "MongoDB", "AWS"],
     },
     {
       name: "NAVFAC",
-      position: "Full Stack Developer",
+      position: "Software Engineer",
       time: {
         from: "April 2019",
         to: "May 2021",
       },
       description: [
-        `Migrated legacy applications to Vue.js and Spring Boot to reduce technical debt and increase maintainability`,
-        `Worked on multiple microservices to improve scalability using Java/Spring`,
-        `Built Jenkins CI/CD pipelines, automated the creation of Docker containers, performing security scans on dependencies, automating tests, and deploying to cloud solutions within Azure`,
-        `Integrated authentication micro service leveraging the power of JWT, OAuth, and SAML for seamless and secure auth flows.`,
+        'Reverse-engineered legacy applications to modern full stack applications using Vue.js, Spring Boot, and PostgreSQL to reduce technical debt and increase maintainability.',
+        'Developed 5 core RESTful microservice APIs using Java, Spring Boot, and PostgreSQL to enhance scalability.',
+        'Built Jenkins CI/CD pipelines, automated the creation of Docker containers, performing security scans on dependencies, automating tests, and deploying to AKS within Azure.',
       ],
       skills: [
         "Vue.js",
@@ -65,7 +61,7 @@ const Experience = () => {
         to: "May 2021",
       },
       description: [
-        `Maintained Wordpress site, ensuring security and relevance of content`,
+        `Maintained organization Wordpress website with 5000 average visitors, ensuring security and relevance of content.`,
       ],
       skills: ["Wordpress"],
     },
