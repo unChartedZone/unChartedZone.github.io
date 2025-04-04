@@ -29,7 +29,7 @@ const Experience = () => {
         'Migrated legacy AngularJS pages to functional React components, leveraging TypeScript for improved type safety, maintainability, and scalability.',
         'Led Agile stand-up meetings, facilitated team collaboration, and addressed blockers to ensure timely delivery of SaaS products.',
       ],
-      skills: ["React", "Scala", "Play", "Bootstrap", "SCSS", "MongoDB", "AWS"],
+      skills: ["React", "Typescript", "Bootstrap", "SCSS", "Scala", "Play", "MongoDB", "AWS"],
     },
     {
       name: "NAVFAC",
@@ -51,6 +51,8 @@ const Experience = () => {
         "PostgreSQL",
         "Azure",
         "Jenkins",
+        "Docker",
+        "Kubernetes",
       ],
     },
     {
