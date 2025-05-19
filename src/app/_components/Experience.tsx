@@ -15,21 +15,30 @@ const Experience = () => {
   const experienceList: ExperienceItem[] = [
     {
       name: "Chatmeter",
-      position: "Software Engineer II",
+      position: "Senior Software Engineer",
       time: {
         from: "May 2021",
         to: "August 2024",
       },
       description: [
-        'Led project to overhaul the survey creator tool, including integrating generative AI prompt to generate a survey, increasing user engagement by 30\%.',
-        'Led image optimizer project and reduced image upload failures among providers such as Google \& Yelp by 60\%.',
-        'Reduced post failures by 80\% by overhauling social media post publisher tool to create a more engaging and user-friendly experience.',
-        'Optimized the post-queuing system to improve reliability and efficiency when publishing to multiple social media platforms, leveraging Scala and the Play framework.',
-        'Reduced operation costs by 75\% by developing an in-house solution for directory location pages with Astro.',
-        'Migrated legacy AngularJS pages to functional React components, leveraging TypeScript for improved type safety, maintainability, and scalability.',
-        'Led Agile stand-up meetings, facilitated team collaboration, and addressed blockers to ensure timely delivery of SaaS products.',
+        "Led project to overhaul the survey creator tool, including integrating generative AI prompt to generate a survey, increasing user engagement by 30%.",
+        "Led image optimizer project and reduced image upload failures among providers such as Google & Yelp by 60%.",
+        "Reduced post failures by 80% by overhauling social media post publisher tool to create a more engaging and user-friendly experience.",
+        "Optimized the post-queuing system to improve reliability and efficiency when publishing to multiple social media platforms, leveraging Scala and the Play framework.",
+        "Reduced operation costs by 75% by developing an in-house solution for directory location pages with Astro.",
+        "Migrated legacy AngularJS pages to functional React components, leveraging TypeScript for improved type safety, maintainability, and scalability.",
+        "Led Agile stand-up meetings, facilitated team collaboration, and addressed blockers to ensure timely delivery of SaaS products.",
       ],
-      skills: ["React", "Typescript", "Bootstrap", "SCSS", "Scala", "Play", "MongoDB", "AWS"],
+      skills: [
+        "React",
+        "Typescript",
+        "Bootstrap",
+        "SCSS",
+        "Scala",
+        "Play",
+        "MongoDB",
+        "AWS",
+      ],
     },
     {
       name: "NAVFAC",
@@ -39,9 +48,9 @@ const Experience = () => {
         to: "May 2021",
       },
       description: [
-        'Reverse-engineered legacy applications to modern full stack applications using Vue.js, Spring Boot, and PostgreSQL to reduce technical debt and increase maintainability.',
-        'Developed 5 core RESTful microservice APIs using Java, Spring Boot, and PostgreSQL to enhance scalability.',
-        'Built Jenkins CI/CD pipelines, automated the creation of Docker containers, performing security scans on dependencies, automating tests, and deploying to AKS within Azure.',
+        "Reverse-engineered legacy applications to modern full stack applications using Vue.js, Spring Boot, and PostgreSQL to reduce technical debt and increase maintainability.",
+        "Developed 5 core RESTful microservice APIs using Java, Spring Boot, and PostgreSQL to enhance scalability.",
+        "Built Jenkins CI/CD pipelines, automated the creation of Docker containers, performing security scans on dependencies, automating tests, and deploying to AKS within Azure.",
       ],
       skills: [
         "Vue.js",
