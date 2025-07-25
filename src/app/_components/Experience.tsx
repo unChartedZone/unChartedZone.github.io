@@ -14,8 +14,15 @@ const Experience = () => {
 
   const experienceList: ExperienceItem[] = [
     {
+      name: "Lawmatics",
+      position: "Software Engineer",
+      time: { from: "July 2025", to: "Present" },
+      description: ["Contributed to improvement of Automations product."],
+      skills: ["React", "TypeScript", "Ruby", "Rails", "PostgreSQL", "Docker"],
+    },
+    {
       name: "Chatmeter",
-      position: "Senior Software Engineer",
+      position: "Software Engineer II",
       time: {
         from: "May 2021",
         to: "August 2024",
