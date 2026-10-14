@@ -1,9 +1,8 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import CopyrightYear from "./CopyrightYear";
 
 const Contact = () => {
-  const year = new Date().getFullYear();
-
   return (
     <section id="contact" className="contact my-4">
       <div className="container mx-auto d-flex align-center justify-center column">
@@ -38,7 +37,7 @@ const Contact = () => {
       <div className="footer">
         <h1 className="footer-header mt-1">CV</h1>
         <h2 className="footer-subheader">Full Stack Developer</h2>
-        <p className="footer-copyright mb-4">Copyright &copy; {year}, CV</p>
+        <CopyrightYear />
       </div>
     </section>
   );
